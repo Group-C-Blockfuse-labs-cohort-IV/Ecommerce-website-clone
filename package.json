@@ -1,0 +1,25 @@
+{
+  "name": "ecommerce-website-clone",
+  "version": "1.0.0",
+  "description": "A modern responsive ecommerce website built with HTML and tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Group-C-Blockfuse-labs-cohort-IV/Ecommerce-website-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Group-C-Blockfuse-labs-cohort-IV/Ecommerce-website-clone/issues"
+  },
+  "homepage": "https://github.com/Group-C-Blockfuse-labs-cohort-IV/Ecommerce-website-clone#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  }
+}
