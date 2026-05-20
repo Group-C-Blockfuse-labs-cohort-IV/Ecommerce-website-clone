@@ -6,9 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce website</title>
     <link rel="stylesheet" href="src/output.css">
+    <script src="https://kit.fontawesome.com/fbf4810423.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header>
+
+        <div
+            class="flex flex-col md:flex-row gap-2 text-white bg-black text-[8px] md:text-sm py-1.5 px-3 md:h-12 md:pt-3 md:gap-5 md:justify-around md:pl-40">
+            <div class="flex gap-1 md:gap-3 md:relative left-40">
+                <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+                <p class="font-semibold underline ">Shop Now</p>
+            </div>
+
+            <div class=" flex justify-end pr-1">
+                <select name="" id="" class="bg-black text-white ">
+                    <option value="english">English</option>
+                    <option value="english">Igbo</option>
+                    <option value="english">Hausa</option>
+                    <option value="english">Yoruba</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="flex md:flex-row justify-between items-center px-6 py-3 relative gap-44 md:mx-[105px]">
+
+            <p class="font-bold text-black text-lg md:text-3xl">Exclusive</p>
+
+            <div>
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+                <label for="menu-toggle" class="md:hidden cursor-pointer text-xl">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <nav>
+                    <ul class="hidden md:flex gap-6 items-center text-[16px] font-normal">
+                        <li><a class="border-b" href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+
+                <ul
+                    class="absolute top-full left-0 w-full text-sm bg-white shadow-md flex-col gap-4 p-4 md:hidden hidden peer-checked:flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+
+            </div>
+
+            <div class="md:flex md:items-center md:justify-between px-6 py-3 gap-4 hidden">
+
+                <div class="bg-[#f5f5f5] flex items-center rounded-sm ">
+                    <input class="px-4 py-2 w-full text-xs " type="text" placeholder="What are you looking for?">
+
+                    <img class="w-4 h-4 mr-3 object-contain" src="Images/Component 2.png" alt="search">
+                </div>
+
+                <div class="flex gap-5 items-center">
+                    <img class="w-6 h-6 object-center" src="Images/Wishlist.png" alt="wishlist icon">
+                    <img class="w-6 h-6 object-contain" src="Images/Cart1 with buy.png" alt="cart icon">
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <hr class="text-gray-300">
+
+
+    <section class="md:mx-[130px] mx-5">
+
+        <div class="grid grid-cols-1 md:grid-cols-[25%_75%]">
+
+            <div
+                class="md:text-[16px] text-sm  md:border-r md:border-gray-300 md:pt-10 md:pr-10 w-[80%] flex flex-col gap-1.5 max-sm:mx-1 max-sm:my-3 md:gap-4">
+                <span class="flex gap-10">
+
+                    <p>Women’s Fashion</p>
+                    <img class="object-contain w-4 relative left-8" src="Images/DropDown.png" alt="">
+                </span>
+
+                <span class="flex gap-10 ">
+                    <p>Men’s Fashion</p>
+                    <img class="object-contain w-4 relative md:left-14 left-[52px] " src="Images/DropDown.png" alt="">
+                </span>
+
+                <p>Electronics</p>
+                <p>Home & Lifestyle</p>
+                <p>Medicines</p>
+                <p>Sports & Outdoor</p>
+                <p>Baby’s & Toys</p>
+                <p>Groceries & Pets</p>
+                <p>Health & Beauty</p>
+            </div>
+
+            <div class="text-white bg-black md:mt-10 p-5 md:mr-5">
+                <div class="flex justify-between md:mt-4">
+                    <div class="md:ml-14 ml-4 ">
+
+                        <span class="flex gap-3 md:gap-5 items-center pb-1 md:pb-3">
+                            <img class="w-3 md:w-8 object-contain" src="Images/1200px-Apple_gray_logo 1.png"
+                                alt="apple logo">
+                            <p class="text-[8px] md:text-[16px] whitespace-nowrap text-ellipsis">iPhone 14 Series</p>
+                        </span>
+
+                        <p class="text-xs md:text-5xl font-semibold">Up to 10% </p>
+                        <p class="text-xs md:text-5xl font-semibold md:pt-3 text-ellipsis whitespace-nowrap">off Voucher
+                        </p>
+
+                        <span class="flex items-center gap-1 text-[7px] md:gap-2 md:text-[16px] mt-2 md:mt-5">
+                            <p class="border-b">Shop Now</p>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <img class="w-[60%] md:w-[80%] relative left-20 md:bottom-5"
+                            src="Images/hero_endframe__cvklg0xk3w6e_large 2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-3 pt-6 md:pt-0">
+                    <div class="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-gray-400"></div>
+                    <div class="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-gray-400"></div>
+                    <div class="bg-[#db4444] rounded-full w-2 h-2 md:w-3 md:h-3 border border-white"></div>
+                    <div class="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-gray-400"></div>
+                    <div class="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-gray-400"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+   
+<div class="flex items-center gap-3 mx-4 sm:mx-8 lg:mx-10 mt-10">
+  <img src="/images/image.png" alt="" class="w-4 h-8 sm:w-5 sm:h-10">
+  <h1 class="text-amber-600 font-medium text-sm sm:text-base">
+    This Month
+  </h1>
+</div>
 
 
     <!-- Music-Experience-Section -->
@@ -50,6 +195,182 @@
 
 
 
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mx-4 sm:mx-8 lg:mx-10 mt-6">
+  <h1 class="font-bold text-2xl sm:text-3xl">
+    Best Selling Products
+  </h1>
+
+  <button class="border bg-secondary px-6 py-3 text-white rounded-md hover:opacity-90 transition">
+    View All
+  </button>
+</div>
+
+<!--CARDS -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 sm:px-8 lg:px-10 mt-10">
+
+  <!--  First Card  -->
+  <div>
+    <div class="relative bg-primary rounded-lg h-[240px] flex items-center justify-center">
+      <img src="/images/jacket.png" alt="" class="w-36 h-48 object-contain">
+
+      <div class="absolute top-4 right-4 space-y-2">
+        <img src="/images/love.png" alt="" class="w-8 h-8">
+        <img src="/images/eye.png" alt="" class="w-8 h-8">
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <h2 class="font-black">The north coat</h2>
+
+      <p>
+        <span class="text-red-700">$260</span>
+        <span class="line-through text-gray-500">$360</span>
+      </p>
+
+      <div class="flex items-center gap-1 mt-2 flex-wrap">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <p>(65)</p>
+      </div>
+    </div>
+  </div>
+
+  <!--  SecondCard  -->
+  <div>
+    <div class="relative bg-primary rounded-lg h-[240px] flex items-center justify-center">
+      <img src="/images/bag.png" alt="" class="w-36 h-48 object-contain">
+
+      <div class="absolute top-4 right-4 space-y-2">
+        <img src="/images/love.png" alt="" class="w-8 h-8">
+        <img src="/images/eye.png" alt="" class="w-8 h-8">
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <h2 class="font-black">Gucci duffle bag</h2>
+
+      <p>
+        <span class="text-red-700">$960</span>
+        <span class="line-through text-gray-500">$1160</span>
+      </p>
+
+      <div class="flex items-center gap-1 mt-2 flex-wrap">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/half star.png" alt="" class="w-5 h-5">
+        <p>(65)</p>
+      </div>
+    </div>
+  </div>
+
+  <!--  Third Card  -->
+  <div>
+    <div class="relative bg-primary rounded-lg h-[240px] flex items-center justify-center">
+      <img src="/images/speaker.png" alt="" class="w-36 h-48 object-contain">
+
+      <div class="absolute top-4 right-4 space-y-2">
+        <img src="/images/love.png" alt="" class="w-8 h-8">
+        <img src="/images/eye.png" alt="" class="w-8 h-8">
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <h2 class="font-black">RGB liquid CPU Cooler</h2>
+
+      <p>
+        <span class="text-red-700">$160</span>
+        <span class="line-through text-gray-500">$170</span>
+      </p>
+
+      <div class="flex items-center gap-1 mt-2 flex-wrap">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/half star.png" alt="" class="w-5 h-5">
+        <p>(65)</p>
+      </div>
+    </div>
+  </div>
+
+  <!--  Fourth Card -->
+  <div>
+    <div class="relative bg-primary rounded-lg h-[240px] flex items-center justify-center">
+      <img src="/images/chair.png" alt="" class="w-36 h-48 object-contain">
+
+      <div class="absolute top-4 right-4 space-y-2">
+        <img src="/images/love.png" alt="" class="w-8 h-8">
+        <img src="/images/eye.png" alt="" class="w-8 h-8">
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <h2 class="font-black">Small BookSelf</h2>
+
+      <p>
+        <span class="text-red-700">$260</span>
+        <span class="line-through text-gray-500">$360</span>
+      </p>
+
+      <div class="flex items-center gap-1 mt-2 flex-wrap">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <img src="/images/star.png" alt="" class="w-5 h-5">
+        <p>(65)</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="mx-4 sm:mx-8 lg:mx-10 mt-16 bg-quaternary rounded-xl p-6 sm:p-10 mt-28">
+
+  <h2 class="text-green-500 font-bold mb-6">
+    Categories
+  </h2>
+
+  <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+
+    
+    <div class="text-center lg:text-left">
+      <h1 class="text-white font-bold text-3xl sm:text-5xl leading-tight">
+        Enhance Your <br>
+        Music Experience
+      </h1>
+
+      
+      <div class="flex justify-center lg:justify-start flex-wrap gap-3 mt-8">
+        <img src="/images/23 hours.png" alt="" class="w-14 h-14">
+        <img src="/images/5 days.png" alt="" class="w-14 h-14">
+        <img src="/images/59 minutes.png" alt="" class="w-14 h-14">
+        <img src="/images/35 seconds.png" alt="" class="w-14 h-14">
+      </div>
+
+      
+      <button class="bg-tertiary text-white px-8 py-3 rounded-lg mt-8 hover:opacity-90 transition">
+        Buy Now!
+      </button>
+    </div>
+
+    
+    <div class="w-full lg:w-auto flex justify-center">
+      <img
+        src="/images/jbl speaker.png"
+        alt=""
+        class="w-full max-w-[568px] object-contain drop-shadow-md"
+      >
+    </div>
+
+  </div>
+</div>
 
 
 </body>
