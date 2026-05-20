@@ -2,191 +2,21 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Exclusive E-commerce - Featured New Arrivals Section Clone">
-  <title>Featured New Arrivals</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./src/output.css">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce website</title>
     <link rel="stylesheet" href="src/output.css">
     <script src="https://kit.fontawesome.com/fbf4810423.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body class="bg-white min-h-screen flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
 
-  <!-- Featured New Arrival Section -->
-  <section class="max-w-7xl w-full mx-auto" id="new-arrival-section">
-    
-    <!-- Section Title & Category Block -->
-    <div class="flex flex-col gap-4 mb-10 select-none">
-      <div class="flex items-center gap-4">
-        <!-- Red vertical bar accent -->
-        <span class="w-5 h-10 bg-[#DB4444] rounded" id="category-accent-bar"></span>
-        <span class="text-[#DB4444] font-semibold text-base tracking-wide" id="category-label">Featured</span>
-      </div>
-      <h2 class="text-black font-bold text-3xl md:text-4xl tracking-wider" id="section-heading">New Arrival</h2>
-    </div>
-
-    <!-- Product Grid Layout -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px]" id="arrival-products-grid radius-5xl">
-      
-      <!-- Left Column: PlayStation 5 Card -->
-      <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 md:p-10 min-h-[450px] lg:min-h-[600px] group transition-all duration-300 hover:shadow-xl hover:shadow-black/10" id="ps5-card">
-        <!-- Soft blue radial glow behind the PS5 image for high fidelity -->
-        <div class="absolute bottom-0 right-0 w-full h-[85%] bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.15)_0%,rgba(0,0,0,0)_70%)] pointer-events-none z-0"></div>
-        
-        <!-- Product Image (placed absolutely at the right/bottom) -->
-        <img src="./src/images/ps5-slim-goedkope-playstation_large 1.png" 
-             alt="PlayStation 5" 
-             class="absolute bottom-0 right-0 max-h-[85%] w-[85%] lg:w-auto object-contain z-0 transition-transform duration-500 group-hover:scale-105 select-none pointer-events-none" 
-             id="ps5-image" />
-        
-        <!-- Content Container -->
-        <div class="relative z-10 max-w-[270px] mt-auto">
-          <h3 class="text-white text-2xl font-semibold tracking-wider mb-2" id="ps5-title">PlayStation 5</h3>
-          <p class="text-[#F5F5F5] text-sm font-light leading-relaxed mb-4" id="ps5-description">Black and White version of the PS5 coming out on sale.</p>
-          <a href="#" 
-             class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block" 
-             id="ps5-shop-now">Shop Now</a>
-        </div>
-      </div>
-
-      <!-- Right Column: Flex container holding Women's Collections and Bottom Row -->
-      <div class="flex flex-col gap-[30px]" id="right-column-container">
-        
-        <!-- Top Row: Women's Collections Card -->
-        <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 md:p-8 min-h-[284px] group transition-all duration-300 hover:shadow-xl hover:shadow-black/10" id="women-card">
-          <!-- Subtle highlight background circle for the image -->
-          <div class="absolute bottom-0 right-0 w-[50%] h-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.06)_0%,rgba(0,0,0,0)_80%)] pointer-events-none z-0"></div>
-          
-          <!-- Product Image (aligned to the right) -->
-          <img src="./src/images/attractive-woman-wearing-hat-posing-black-background 1.png" 
-               alt="Women's Collections" 
-               class="absolute bottom-0 right-0 h-full w-[45%] md:w-auto object-cover md:object-contain z-0 transition-transform duration-500 group-hover:scale-105 select-none pointer-events-none grayscale contrast-115 brightness-95" 
-               id="women-image" />
-          
-          <!-- Content Container -->
-          <div class="relative z-10 max-w-[270px] mt-auto">
-            <h3 class="text-white text-2xl font-semibold tracking-wider mb-2" id="women-title">Women's Collections</h3>
-            <p class="text-[#F5F5F5] text-sm font-light leading-relaxed mb-4" id="women-description">Featured woman collections that give you another vibe.</p>
-            <a href="#" 
-               class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block" 
-               id="women-shop-now">Shop Now</a>
-          </div>
-        </div>
-
-        <!-- Bottom Row: Speakers and Perfume Card -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-[30px]" id="bottom-cards-grid">
-          
-          <!-- Speakers Card -->
-          <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 min-h-[284px] group transition-all duration-300 hover:shadow-xl hover:shadow-black/10" id="speakers-card">
-            <!-- Circular glowing highlight centered behind the speakers -->
-            <div class="absolute inset-0 m-auto w-[65%] h-[65%] rounded-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.12)_0%,rgba(0,0,0,0)_70%)] pointer-events-none z-0"></div>
-            
-            <!-- Product Image -->
-            <img src="./src/images/Frame 707.png" 
-                 alt="Speakers" 
-                 class="absolute inset-0 m-auto max-h-[65%] max-w-[65%] object-contain z-0 transition-transform duration-500 group-hover:scale-110 select-none pointer-events-none" 
-                 id="speakers-image" />
-            
-            <!-- Content Container -->
-            <div class="relative z-10 mt-auto">
-              <h3 class="text-white text-xl font-semibold tracking-wider mb-2" id="speakers-title">Speakers</h3>
-              <p class="text-[#F5F5F5] text-xs font-light leading-relaxed mb-4" id="speakers-description">Amazon wireless speakers</p>
-              <a href="#" 
-                 class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block" 
-                 id="speakers-shop-now">Shop Now</a>
-            </div>
-          </div>
-
-          <!-- Perfume Card -->
-          <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 min-h-[284px] group transition-all duration-300 hover:shadow-xl hover:shadow-black/10" id="perfume-card">
-            <!-- Circular gold highlight behind perfume -->
-            <div class="absolute inset-0 m-auto w-[65%] h-[65%] rounded-full bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.1)_0%,rgba(0,0,0,0)_70%)] pointer-events-none z-0"></div>
-            
-            <!-- Product Image -->
-            <img src="./src/images/652e82cd70aa6522dd785109a455904c.png" 
-                 alt="Perfume" 
-                 class="absolute inset-0 m-auto max-h-[65%] max-w-[65%] object-contain z-0 transition-transform duration-500 group-hover:scale-110 select-none pointer-events-none" 
-                 id="perfume-image" />
-            
-          
-            <div class="relative z-10 mt-auto">
-              <h3 class="text-white text-xl font-semibold tracking-wider mb-2" id="perfume-title">Perfume</h3>
-              <p class="text-[#F5F5F5] text-xs font-light leading-relaxed mb-4" id="perfume-description">GUCCI INTENSE OUD EDP</p>
-              <a href="#" 
-                 class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block" 
-                 id="perfume-shop-now">Shop Now</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- Features/Services Section at the bottom -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 justify-center items-center mt-24 mb-16 select-none" id="services-block">
-      
-      <!-- Service 1: Fast Delivery -->
-      <div class="flex flex-col items-center text-center group" id="service-delivery">
-        <div class="w-20 h-20 rounded-full bg-[#2F2F2F]/20 flex items-center justify-center transition-transform duration-300 group-hover:scale-105" id="delivery-outer-circle">
-          <div class="w-14 h-14 rounded-full bg-black flex items-center justify-center" id="delivery-inner-circle">
-            <!-- Delivery Truck SVG Icon -->
-            <img src="./src/images/Servicesicon.png" alt="">
-          </div>
-        </div>
-        <h3 class="text-black font-bold text-xl tracking-wider mt-6 uppercase" id="delivery-title">FREE AND FAST DELIVERY</h3>
-        <p class="text-sm text-gray-500 mt-2 font-normal" id="delivery-subtitle">Free delivery for all orders over $140</p>
-      </div>
-
-      <!-- Service 2: Customer Support -->
-      <div class="flex flex-col items-center text-center group" id="service-support">
-        <div class="w-20 h-20 rounded-full bg-[#2F2F2F]/20 flex items-center justify-center transition-transform duration-300 group-hover:scale-105" id="support-outer-circle">
-          <div class="w-14 h-14 rounded-full bg-black flex items-center justify-center" id="support-inner-circle">
-            <!-- Customer Service Headphone SVG Icon -->
-            <img src="./src/images/Servicesicon2.png" alt="">
-          </div>
-        </div>
-        <h3 class="text-black font-bold text-xl tracking-wider mt-6 uppercase" id="support-title">24/7 CUSTOMER SERVICE</h3>
-        <p class="text-sm text-gray-500 mt-2 font-normal" id="support-subtitle">Friendly 24/7 customer support</p>
-      </div>
-
-      <div class="flex flex-col items-center text-center group" id="service-guarantee">
-        <div class="w-20 h-20 rounded-full bg-[#2F2F2F]/20 flex items-center justify-center transition-transform duration-300 group-hover:scale-105" id="guarantee-outer-circle">
-          <div class="w-14 h-14 rounded-full bg-black flex items-center justify-center" id="guarantee-inner-circle">
-            <img src="./src/images/Servicesicon3.png" alt="">
-          </div>
-        </div>
-        <h3 class="text-black font-bold text-xl tracking-wider mt-6 uppercase" id="guarantee-title">MONEY BACK GUARANTEE</h3>
-        <p class="text-sm text-gray-500 mt-2 font-normal" id="guarantee-subtitle">We return money within 30 days</p>
-      </div>
-
-    </div>
-
-    <div class="flex justify-end mt-12 md:mt-16" id="scroll-top-block">
-      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
-              class="w-12 h-12 rounded-full bg-[#F5F5F5] hover:bg-[#E0E0E0] active:scale-95 flex items-center justify-center transition-all duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-black cursor-pointer" 
-              aria-label="Scroll to top" 
-              id="scroll-top-button">
-              <img src="src/images/icons_arrow-up.png" alt="">
-      </button>
-    </div>
-
-  </section>
-
-</body>
-</html>
 <body>
     <header>
 
@@ -448,7 +278,7 @@
 
                     <p>
                         <span class="text-red-700">$360</span>
-                        
+
                     </p>
 
                     <div class="flex items-center gap-1 mt-2 flex-wrap">
@@ -464,7 +294,7 @@
 
         </div>
 
-    
+
     </section>
 
 
@@ -476,9 +306,9 @@
             <div class="flex flex-col gap-4">
                 <h4 class="text-green-500 font-bold">Categories</h4>
                 <h2 class="text-white font-bold text-2xl md:text-4xl max-sm:text-center leading-tight ">Enhance Your<br>
-                 Music Experience
+                    Music Experience
                 </h2>
-                
+
                 <!-- Timer boxes -->
 
                 <div class="inline-flex flex-wrap gap-3">
@@ -499,17 +329,336 @@
                         <strong>35</strong>Seconds
                     </span>
                 </div>
-                 class="bg-tertiary text-white px-8 py-3 rounded-lg mt-8 hover:opacity-90 transition"
+                class="bg-tertiary text-white px-8 py-3 rounded-lg mt-8 hover:opacity-90 transition"
                 <button class="bg-[#00FF66] px-10 py-3 w-fit font-medium rounded-md text-white">Buy Now!</button>
             </div>
-            <img class="w-full max-w-142 object-contain drop-shadow-md" src="music-experience-section-img/jam_box.png" alt="jam_box"
-                class="max-w-sm md:max-w-md lg:max-w-lg mt-6 md:mt-0">
+            <img class="w-full max-w-142 object-contain drop-shadow-md" src="music-experience-section-img/jam_box.png"
+                alt="jam_box" class="max-w-sm md:max-w-md lg:max-w-lg mt-6 md:mt-0">
 
 
         </div>
     </section>
 
 
+    <section>
+        <div class="flex gap-4 pt-4 ml-10">
+
+            <div class="bg-red-600 h-6 w-3"></div>
+            <p class="text-red-600  font-medium">Our Products</p>
+
+        </div>
+
+        <div class="flex justify-between px-10 pt-5">
+            <p class="font-semibold text-2xl">Explore Our Products</p>
+            <img src="image/ddddarr.png" class="mr-96">
+        </div>
+
+        <div class="flex gap-6 px-10 pt-10">
+
+            <div class="bg-gray-100 h-40 w-52 relative ">
+                <img src="image/cat.png" class="w-19 ml-15 pt-6 ">
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1 ">
+                <p class="mt-7 ">Breed Dry Dog Food</p>
+
+                <div class="flex gap-2.5 pt-3">
+                    <p class="text-red-600">$100</p>
+                    <img src="image/fgdsy.png" alt="">
+                </div>
+            </div>
+
+            <div class="bg-gray-100 h-34 w-52 relative">
+                <img src="image/camera.png" class="w-36 ml-5">
+                <button class="bg-black text-white w-52 font-serif ">Add to cart</button>
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1 ">
+                <p class="mt-3.5 ">CANON EOS DSLR Camera</p>
+
+                <div class="flex gap-2.5 pt-3">
+                    <p class="text-red-600">$360</p>
+                    <img src="image/fgdsy.png" alt="">
+                </div>
+            </div>
+
+            <div class="bg-gray-100 h-40 w-52 relative">
+                <img src="image/lap.png" class="w-30 ml-8 pt-5">
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1 ">
+                <p class="mt-7 ">ASUS FHD Gaming Laptop</p>
+
+                <div class="flex gap-2.5 pt-3">
+                    <p class="text-red-600">$700</p>
+                    <img src="image/fgdsy.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="bg-gray-100 h-40 w-52 relative">
+                <img src="image/curology-j7pKVQrTUsM-unsplash 1.png" class="w-30 pt-5 ml-8">
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1 ">
+                <p class="mt-12 font-mono"> Curology Product Set </p>
+
+                <div class="flex gap-2.5 pt-3">
+                    <p class="text-red-600">$500</p>
+                    <img src="image/fgdsy.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex gap-6 px-10 pt-36">
+
+            <div class="bg-gray-100 h-40 w-52 relative ">
+                <img src="image/benz.png" class="w-30 ml-8 pt-6 ">
+                <button class="bg-green-600 absolute top-2.5 ml-2 text-white">New</button>
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1 ">
+                <p class="mt-20 ">Kids Electric Car</p>
+
+
+                <div class="flex gap-2.5 pt-3">
+                    <p class="text-red-600">$100</p>
+                    <img src="image/fgdsy.png" alt="">
+                </div>
+                <img src="image/Colour Chnage (1).png  " class="pt-2">
+            </div>
+
+            <div class="bg-gray-100 h-40 w-52 relative">
+                <img src="image/boot.png" class="w-24 ml-10 pt-7">
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1 ">
+                <p class="mt-20 ">Jr. Zoom Soccer Cleats</p>
+
+                <div class="flex gap-2.5 pt-3">
+                    <p class="text-red-600">$360</p>
+                    <img src="image/fgdsy.png" alt="">
+                </div>
+                <img src="image/eeeeeeeerrt.png" class="pt-2">
+            </div>
+
+            <div class="bg-gray-100 h-40 w-52 relative">
+                <img src="image/pad.png" class="w-30 ml-8 pt-5">
+                <button class="bg-green-600 absolute top-2.5 ml-2 text-white">New</button>
+
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1 ">
+                <p class="mt-17 ">GP11 Shooter USB Gamepad</p>
+
+                <div class="flex gap-2.5 pt-3">
+                    <p class="text-red-600">$700</p>
+                    <img src="image/fgdsy.png" alt="">
+                </div>
+                <img src="image/Colour Chnage (1).png" class="pt-2">
+
+            </div>
+
+            <div class="bg-gray-100 h-40 w-52 relative">
+                <img src="image/jezzz.png" class="w-30 pt-5 ml-8">
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1 ">
+                <p class="mt-17 font-mono"> Quilted Satin Jacket </p>
+
+                <div class="flex gap-2.5 pt-3">
+                    <p class="text-red-600">$500</p>
+                    <img src="image/fgdsy.png" alt="">
+                </div>
+                <img src="image/Colour Chnage.png" class="pt-2">
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="bg-white min-h-screen flex items-center justify-center py-16 px-4 sm:px-6 lg:px-36 lg:mt-36">
+
+        <!-- Featured New Arrival Section -->
+        <div class="max-w-7xl w-full mx-auto" id="new-arrival-section">
+
+            <!-- Section Title & Category Block -->
+            <div class="flex flex-col gap-4 mb-10 select-none">
+                <div class="flex items-center gap-4">
+                    <!-- Red vertical bar accent -->
+                    <span class="w-5 h-10 bg-[#DB4444] rounded" id="category-accent-bar"></span>
+                    <span class="text-[#DB4444] font-semibold text-base tracking-wide"
+                        id="category-label">Featured</span>
+                </div>
+                <h2 class="text-black font-bold text-3xl md:text-4xl tracking-wider" id="section-heading">New Arrival
+                </h2>
+            </div>
+
+            <!-- Product Grid Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px]" id="arrival-products-grid radius-5xl">
+
+                <!-- Left Column: PlayStation 5 Card -->
+                <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 md:p-10 min-h-[450px] lg:min-h-[600px] group transition-all duration-300 hover:shadow-xl hover:shadow-black/10"
+                    id="ps5-card">
+                    <!-- Soft blue radial glow behind the PS5 image for high fidelity -->
+                    <div
+                        class="absolute bottom-0 right-0 w-full h-[85%] bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.15)_0%,rgba(0,0,0,0)_70%)] pointer-events-none z-0">
+                    </div>
+
+                    <!-- Product Image (placed absolutely at the right/bottom) -->
+                    <img src="./src/images/ps5-slim-goedkope-playstation_large 1.png" alt="PlayStation 5"
+                        class="absolute bottom-0 right-0 max-h-[85%] w-[85%] lg:w-auto object-contain z-0 transition-transform duration-500 group-hover:scale-105 select-none pointer-events-none"
+                        id="ps5-image" />
+
+                    <!-- Content Container -->
+                    <div class="relative z-10 max-w-[270px] mt-auto">
+                        <h3 class="text-white text-2xl font-semibold tracking-wider mb-2" id="ps5-title">PlayStation 5
+                        </h3>
+                        <p class="text-[#F5F5F5] text-sm font-light leading-relaxed mb-4" id="ps5-description">Black and
+                            White version of the PS5 coming out on sale.</p>
+                        <a href="#"
+                            class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block"
+                            id="ps5-shop-now">Shop Now</a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Flex container holding Women's Collections and Bottom Row -->
+                <div class="flex flex-col gap-[30px]" id="right-column-container">
+
+                    <!-- Top Row: Women's Collections Card -->
+                    <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 md:p-8 min-h-[284px] group transition-all duration-300 hover:shadow-xl hover:shadow-black/10"
+                        id="women-card">
+                        <!-- Subtle highlight background circle for the image -->
+                        <div
+                            class="absolute bottom-0 right-0 w-[50%] h-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.06)_0%,rgba(0,0,0,0)_80%)] pointer-events-none z-0">
+                        </div>
+
+                        <!-- Product Image (aligned to the right) -->
+                        <img src="./src/images/attractive-woman-wearing-hat-posing-black-background 1.png"
+                            alt="Women's Collections"
+                            class="absolute bottom-0 right-0 h-full w-[45%] md:w-auto object-cover md:object-contain z-0 transition-transform duration-500 group-hover:scale-105 select-none pointer-events-none grayscale contrast-115 brightness-95"
+                            id="women-image" />
+
+                        <!-- Content Container -->
+                        <div class="relative z-10 max-w-[270px] mt-auto">
+                            <h3 class="text-white text-2xl font-semibold tracking-wider mb-2" id="women-title">Women's
+                                Collections</h3>
+                            <p class="text-[#F5F5F5] text-sm font-light leading-relaxed mb-4" id="women-description">
+                                Featured woman collections that give you another vibe.</p>
+                            <a href="#"
+                                class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block"
+                                id="women-shop-now">Shop Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row: Speakers and Perfume Card -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-[30px]" id="bottom-cards-grid">
+
+                        <!-- Speakers Card -->
+                        <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 min-h-[284px] group transition-all duration-300 hover:shadow-xl hover:shadow-black/10"
+                            id="speakers-card">
+                            <!-- Circular glowing highlight centered behind the speakers -->
+                            <div
+                                class="absolute inset-0 m-auto w-[65%] h-[65%] rounded-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.12)_0%,rgba(0,0,0,0)_70%)] pointer-events-none z-0">
+                            </div>
+
+                            <!-- Product Image -->
+                            <img src="./src/images/Frame 707.png" alt="Speakers"
+                                class="absolute inset-0 m-auto max-h-[65%] max-w-[65%] object-contain z-0 transition-transform duration-500 group-hover:scale-110 select-none pointer-events-none"
+                                id="speakers-image" />
+
+                            <!-- Content Container -->
+                            <div class="relative z-10 mt-auto">
+                                <h3 class="text-white text-xl font-semibold tracking-wider mb-2" id="speakers-title">
+                                    Speakers</h3>
+                                <p class="text-[#F5F5F5] text-xs font-light leading-relaxed mb-4"
+                                    id="speakers-description">Amazon wireless speakers</p>
+                                <a href="#"
+                                    class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block"
+                                    id="speakers-shop-now">Shop Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Perfume Card -->
+                        <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 min-h-[284px] group transition-all duration-300 hover:shadow-xl hover:shadow-black/10"
+                            id="perfume-card">
+                            <!-- Circular gold highlight behind perfume -->
+                            <div
+                                class="absolute inset-0 m-auto w-[65%] h-[65%] rounded-full bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.1)_0%,rgba(0,0,0,0)_70%)] pointer-events-none z-0">
+                            </div>
+
+                            <!-- Product Image -->
+                            <img src="./src/images/652e82cd70aa6522dd785109a455904c.png" alt="Perfume"
+                                class="absolute inset-0 m-auto max-h-[65%] max-w-[65%] object-contain z-0 transition-transform duration-500 group-hover:scale-110 select-none pointer-events-none"
+                                id="perfume-image" />
+
+
+                            <div class="relative z-10 mt-auto">
+                                <h3 class="text-white text-xl font-semibold tracking-wider mb-2" id="perfume-title">
+                                    Perfume</h3>
+                                <p class="text-[#F5F5F5] text-xs font-light leading-relaxed mb-4"
+                                    id="perfume-description">GUCCI INTENSE OUD EDP</p>
+                                <a href="#"
+                                    class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block"
+                                    id="perfume-shop-now">Shop Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Features/Services Section at the bottom -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 justify-center items-center mt-24 mb-16 select-none"
+                id="services-block">
+
+                <!-- Service 1: Fast Delivery -->
+                <div class="flex flex-col items-center text-center group" id="service-delivery">
+                    <div class="w-20 h-20 rounded-full bg-[#2F2F2F]/20 flex items-center justify-center transition-transform duration-300 group-hover:scale-105"
+                        id="delivery-outer-circle">
+                        <div class="w-14 h-14 rounded-full bg-black flex items-center justify-center"
+                            id="delivery-inner-circle">
+                            <!-- Delivery Truck SVG Icon -->
+                            <img src="./src/images/Servicesicon.png" alt="">
+                        </div>
+                    </div>
+                    <h3 class="text-black font-bold text-xl tracking-wider mt-6 uppercase" id="delivery-title">FREE AND
+                        FAST DELIVERY</h3>
+                    <p class="text-sm text-gray-500 mt-2 font-normal" id="delivery-subtitle">Free delivery for all
+                        orders over $140</p>
+                </div>
+
+                <!-- Service 2: Customer Support -->
+                <div class="flex flex-col items-center text-center group" id="service-support">
+                    <div class="w-20 h-20 rounded-full bg-[#2F2F2F]/20 flex items-center justify-center transition-transform duration-300 group-hover:scale-105"
+                        id="support-outer-circle">
+                        <div class="w-14 h-14 rounded-full bg-black flex items-center justify-center"
+                            id="support-inner-circle">
+                            <!-- Customer Service Headphone SVG Icon -->
+                            <img src="./src/images/Servicesicon2.png" alt="">
+                        </div>
+                    </div>
+                    <h3 class="text-black font-bold text-xl tracking-wider mt-6 uppercase" id="support-title">24/7
+                        CUSTOMER SERVICE</h3>
+                    <p class="text-sm text-gray-500 mt-2 font-normal" id="support-subtitle">Friendly 24/7 customer
+                        support</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center group" id="service-guarantee">
+                    <div class="w-20 h-20 rounded-full bg-[#2F2F2F]/20 flex items-center justify-center transition-transform duration-300 group-hover:scale-105"
+                        id="guarantee-outer-circle">
+                        <div class="w-14 h-14 rounded-full bg-black flex items-center justify-center"
+                            id="guarantee-inner-circle">
+                            <img src="./src/images/Servicesicon3.png" alt="">
+                        </div>
+                    </div>
+                    <h3 class="text-black font-bold text-xl tracking-wider mt-6 uppercase" id="guarantee-title">MONEY
+                        BACK GUARANTEE</h3>
+                    <p class="text-sm text-gray-500 mt-2 font-normal" id="guarantee-subtitle">We return money within 30
+                        days</p>
+                </div>
+
+            </div>
+
+            <div class="flex justify-end mt-12 md:mt-16" id="scroll-top-block">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                    class="w-12 h-12 rounded-full bg-[#F5F5F5] hover:bg-[#E0E0E0] active:scale-95 flex items-center justify-center transition-all duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-black cursor-pointer"
+                    aria-label="Scroll to top" id="scroll-top-button">
+                    <img src="src/images/icons_arrow-up.png" alt="">
+                </button>
+            </div>
+
+
+        </div>
+    </section>
 </body>
+
 
 </html>
