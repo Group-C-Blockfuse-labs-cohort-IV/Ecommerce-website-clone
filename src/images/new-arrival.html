@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Arrival</title>
+  <link href="./output.css" rel="stylesheet"/>  
+  <style>
+    @theme {
+      --font-poppins: 'Poppins', sans-serif;
+      --color-red-brand: #DB4444;
+    }
+
+    body {
+      font-family: var(--font-poppins);
+    }
+
+    .shop-btn {
+      @apply relative inline-flex items-center gap-2 font-semibold text-sm text-white border-b border-white pb-0.5 transition-all duration-200;
+    }
+    .shop-btn::after {
+      content: '';
+      @apply absolute bottom-0 left-0 w-0 h-px bg-red-400 transition-all duration-300;
+    }
+    .shop-btn:hover::after {
+      @apply w-full;
+    }
+
+    .card-overlay {
+      @apply absolute inset-0 bg-black/10 opacity-0 transition-opacity duration-300;
+    }
+    .card-root:hover .card-overlay {
+      @apply opacity-100;
+    }
+    .card-root:hover img {
+      transform: scale(1.04);
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white text-gray-900 px-6 md:px-16 py-10 max-w-screen-xl mx-auto">
+
+  <!-- Section Label -->
+  <div class="flex items-center gap-3 mb-3">
+    <span class="w-4 h-9 rounded-sm bg-[#DB4444] block"></span>
+    <span class="text-[#DB4444] font-semibold text-sm tracking-wide">Featured</span>
+  </div>
+
+  <!-- Section Title -->
+  <h2 class="text-3xl font-bold mb-8">New Arrival</h2>
+
+  <!-- Grid Layout -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+    <!-- PlayStation 5 — Large left card -->
+    <div class="card-root relative rounded-lg overflow-hidden bg-black cursor-pointer group" style="min-height: 400px;">
+      <img
+        src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=800&q=80"
+        alt="PlayStation 5"
+        class="w-full h-full object-cover transition-transform duration-500"
+        style="min-height: 400px;"
+      />
+      <div class="card-overlay"></div>
+      <!-- Content overlay at bottom -->
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+        <h3 class="text-white text-xl font-bold mb-1">PlayStation 5</h3>
+        <p class="text-gray-300 text-sm mb-3">Black and White version of the PS5 coming out on sale.</p>
+        <a href="#" class="shop-btn">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Right column: stacked cards -->
+    <div class="flex flex-col gap-5">
+
+      <!-- Women's Collections — wide top card -->
+      <div class="card-root relative rounded-lg overflow-hidden bg-neutral-900 cursor-pointer group" style="height: 185px;">
+        <img
+          src="https://images.unsplash.com/photo-1529139574466-a303027614a0?w=800&q=80"
+          alt="Women's Collections"
+          class="w-full h-full object-cover object-top grayscale transition-transform duration-500"
+        />
+        <div class="card-overlay"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/75 via-black/20 to-transparent">
+          <h3 class="text-white text-lg font-bold mb-0.5">Women's Collections</h3>
+          <p class="text-gray-300 text-xs mb-2">Featured woman collections that give you another vibe.</p>
+          <a href="#" class="shop-btn">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Bottom two cards -->
+      <div class="grid grid-cols-2 gap-5">
+
+        <!-- Speakers -->
+        <div class="card-root relative rounded-lg overflow-hidden bg-neutral-900 cursor-pointer group" style="height: 185px;">
+          <img
+            src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&q=80"
+            alt="Speakers"
+            class="w-full h-full object-cover transition-transform duration-500"
+          />
+          <div class="card-overlay"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
+            <h3 class="text-white text-base font-bold mb-0.5">Speakers</h3>
+            <p class="text-gray-300 text-xs mb-2">Amazon wireless speakers</p>
+            <a href="#" class="shop-btn text-xs">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Perfume -->
+        <div class="card-root relative rounded-lg overflow-hidden bg-neutral-900 cursor-pointer group" style="height: 185px;">
+          <img
+            src="https://images.unsplash.com/photo-1541643600914-78b084683702?w=600&q=80"
+            alt="Perfume"
+            class="w-full h-full object-cover transition-transform duration-500"
+          />
+          <div class="card-overlay"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
+            <h3 class="text-white text-base font-bold mb-0.5">Perfume</h3>
+            <p class="text-gray-300 text-xs mb-2">GUCCI INTENSE OUD EDP</p>
+            <a href="#" class="shop-btn text-xs">Shop Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Bar -->
+  <div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center border-t border-gray-100 pt-12">
+
+    <!-- Free Delivery -->
+    <div class="flex flex-col items-center gap-3">
+      <div class="w-16 h-16 rounded-full border-2 border-gray-200 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l1 1h1m8-1h3l3-4V9h-6v7h-1" />
+        </svg>
+      </div>
+      <div>
+        <p class="font-bold text-sm uppercase tracking-wide">FREE AND FAST DELIVERY</p>
+        <p class="text-gray-500 text-sm mt-1">Free delivery for all orders over $140</p>
+      </div>
+    </div>
+
+    <!-- Customer Service -->
+    <div class="flex flex-col items-center gap-3">
+      <div class="w-16 h-16 rounded-full border-2 border-gray-200 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.308 1.154a11.04 11.04 0 005.516 5.516l1.154-2.308a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+      </div>
+      <div>
+        <p class="font-bold text-sm uppercase tracking-wide">24/7 CUSTOMER SERVICE</p>
+        <p class="text-gray-500 text-sm mt-1">Friendly 24/7 customer support</p>
+      </div>
+    </div>
+
+    <!-- Money Back -->
+    <div class="flex flex-col items-center gap-3">
+      <div class="w-16 h-16 rounded-full border-2 border-gray-200 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+      </div>
+      <div>
+        <p class="font-bold text-sm uppercase tracking-wide">MONEY BACK GUARANTEE</p>
+        <p class="text-gray-500 text-sm mt-1">We return money within 30 days</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scroll to top -->
+  <div class="flex justify-end mt-10">
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+      class="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+  </div>
+
+</body>
+</html>
