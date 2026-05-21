@@ -1294,6 +1294,9 @@
   .text-red-700 {
     color: var(--color-red-700);
   }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
   .text-white {
     color: var(--color-white);
   }
