@@ -313,6 +313,12 @@
   .-mt-8 {
     margin-top: calc(var(--spacing) * -8);
   }
+  .-mt-66 {
+    margin-top: calc(var(--spacing) * -66);
+  }
+  .-mt-66\.25 {
+    margin-top: calc(var(--spacing) * -66.25);
+  }
   .-mt-\[265px\] {
     margin-top: calc(265px * -1);
   }
@@ -519,6 +525,9 @@
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
+  }
+  .h-10\.25 {
+    height: calc(var(--spacing) * 10.25);
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
@@ -966,6 +975,9 @@
   }
   .bg-\[\#2F2F2F\]\/20 {
     background-color: color-mix(in oklab, #2F2F2F 20%, transparent);
+  }
+  .bg-\[\#DB444\] {
+    background-color: #DB444;
   }
   .bg-\[\#DB4444\] {
     background-color: #DB4444;
