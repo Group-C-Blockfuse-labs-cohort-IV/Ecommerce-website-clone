@@ -1,13 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce website</title>
-    <link rel="stylesheet" href="src/output.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exclusive E-commerce - Wishlist Section Clone">
+  <title>Wishlist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/output.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
+<body class="bg-white min-h-screen flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
+  <section class="max-w-7xl w-full mx-auto" id="wishlist-section">
+<section class="mt-10">
 
-<body>
+    <div class="flex items-center justify-between mb-12">
+        <h2 class="text-2xl font-medium">
+            Wishlist <span class="text-gray-500">(4)</span>
+        </h2>
+
+        <button class="border border-gray-300 px-10 py-4 rounded hover:bg-gray-100 transition">
+            Move All To Bag
+        </button>
+    </div>
+
     
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+
+            <div class="bg-[#F5F5F5] rounded relative p-6">
+
+                <span class="absolute top-4 left-4 bg-[#DB4444] text-white text-xs px-3 py-1 rounded">
+                    -35%
+                </span>
+
+                <button class="absolute right-4 top-4 bg-white w-8 h-8 rounded-full flex items-center justify-center">
+                    🗑
+                </button>
+
+                <img src="./src/images/bag.png"
+                    class="h-[180px] mx-auto object-contain">
+
+                <button class="w-full bg-black text-white py-3 mt-6 flex justify-center items-center gap-3">
+                    🛒 Add To Cart
+                </button>
+
+            </div>
+
+            <h3 class="font-medium mt-4">
+                Gucci duffle bag
+            </h3>
+
+            <div class="flex gap-3 mt-2">
+                <span class="text-[#DB4444] font-semibold">$960</span>
+                <span class="text-gray-400 line-through">$1160</span>
+            </div>
+
+        </div>
+
+
+        <!-- Card 2 -->
+        <div>
+
+            <div class="bg-[#F5F5F5] rounded relative p-6">
+
+                <button class="absolute right-4 top-4 bg-white w-8 h-8 rounded-full flex items-center justify-center">
+                    🗑
+                </button>
+
+                <img src="./src/images/cooler.png"
+                    class="h-[180px] mx-auto object-contain">
+
+                <button class="w-full bg-black text-white py-3 mt-6 flex justify-center items-center gap-3">
+                    🛒 Add To Cart
+                </button>
+
+            </div>
+
+            <h3 class="font-medium mt-4">
+                RGB liquid CPU Cooler
+            </h3>
+
+            <div class="mt-2">
+                <span class="text-[#DB4444] font-semibold">
+                    $1960
+                </span>
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div>
+
+            <div class="bg-[#F5F5F5] rounded relative p-6">
+
+                <button class="absolute right-4 top-4 bg-white w-8 h-8 rounded-full flex items-center justify-center">
+                    🗑
+                </button>
+
+                <img src="./src/images/gamepad.png"
+                    class="h-[180px] mx-auto object-contain">
+
+                <button class="w-full bg-black text-white py-3 mt-6 flex justify-center items-center gap-3">
+                    🛒 Add To Cart
+                </button>
+
+            </div>
+
+            <h3 class="font-medium mt-4">
+                GP11 Shooter USB Gamepad
+            </h3>
+
+            <div class="mt-2">
+                <span class="text-[#DB4444] font-semibold">
+                    $550
+                </span>
+            </div>
+
+        </div>
+
+
+        <!-- Card 4 -->
+
+        <div>
+
+            <div class="bg-[#F5F5F5] rounded relative p-6">
+
+                <button class="absolute right-4 top-4 bg-white w-8 h-8 rounded-full flex items-center justify-center">
+                    🗑
+                </button>
+
+                <img src="./src/images/jacket.png"
+                    class="h-[180px] mx-auto object-contain">
+
+                <button class="w-full bg-black text-white py-3 mt-6 flex justify-center items-center gap-3">
+                    🛒 Add To Cart
+                </button>
+
+            </div>
+
+            <h3 class="font-medium mt-4">
+                Quilted Satin Jacket
+            </h3>
+
+            <div class="mt-2">
+                <span class="text-[#DB4444] font-semibold">
+                    $750
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Just For You -->
+
+<section class="mt-24">
+
+    <div class="flex justify-between items-center mb-12">
+
+        <div class="flex items-center gap-4">
+
+            <span class="w-5 h-10 bg-[#DB4444] rounded"></span>
+
+            <h2 class="text-2xl font-medium">
+                Just For You
+            </h2>
+
+        </div>
+
+        <button class="border border-gray-300 px-10 py-4 rounded hover:bg-gray-100 transition">
+            See All
+        </button>
+
+    </div>
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+
+        <!-- Product Card -->
+
+        <div>
+
+            <div class="bg-[#F5F5F5] rounded relative p-6">
+
+                <span class="absolute top-4 left-4 bg-[#DB4444] text-white text-xs px-3 py-1 rounded">
+                    -35%
+                </span>
+
+                <button class="absolute right-4 top-4 bg-white w-8 h-8 rounded-full flex items-center justify-center">
+                    👁
+                </button>
+
+                <img src="./src/images/laptop.png"
+                    class="h-[180px] mx-auto object-contain">
+
+                <button class="w-full bg-black text-white py-3 mt-6 flex justify-center items-center gap-3">
+                    🛒 Add To Cart
+                </button>
+
+            </div>
+
+            <h3 class="font-medium mt-4">
+                ASUS FHD Gaming Laptop
+            </h3>
+
+            <div class="flex gap-3 mt-2">
+
+                <span class="text-[#DB4444] font-semibold">
+                    $960
+                </span>
+
+                <span class="line-through text-gray-400">
+                    $1160
+                </span>
+
+            </div>
+
+            <div class="mt-2 text-[#FFAD33]">
+                ★★★★★ <span class="text-gray-500">(65)</span>
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <div class="bg-[#F5F5F5] rounded relative p-6">
+
+                <button class="absolute right-4 top-4 bg-white w-8 h-8 rounded-full flex items-center justify-center">
+                    👁
+                </button>
+
+                <img src="./src/images/monitor.png"
+                    class="h-[180px] mx-auto object-contain">
+
+                <button class="w-full bg-black text-white py-3 mt-6 flex justify-center items-center gap-3">
+                    🛒 Add To Cart
+                </button>
+
+            </div>
+
+            <h3 class="font-medium mt-4">
+                IPS LCD Gaming Monitor
+            </h3>
+
+            <div class="mt-2">
+                <span class="text-[#DB4444] font-semibold">
+                    $1160
+                </span>
+            </div>
+
+            <div class="mt-2 text-[#FFAD33]">
+                ★★★★★ <span class="text-gray-500">(65)</span>
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <div class="bg-[#F5F5F5] rounded relative p-6">
+
+                <span class="absolute top-4 left-4 bg-[#00FF66] text-white text-xs px-3 py-1 rounded">
+                    New
+                </span>
+
+                <button class="absolute right-4 top-4 bg-white w-8 h-8 rounded-full flex items-center justify-center">
+                    👁
+                </button>
+
+                <img src="./src/images/red-gamepad.png"
+                    class="h-[180px] mx-auto object-contain">
+
+                <button class="w-full bg-black text-white py-3 mt-6 flex justify-center items-center gap-3">
+                    🛒 Add To Cart
+                </button>
+
+            </div>
+
+            <h3 class="font-medium mt-4">
+                HAVIT HV-G92 Gamepad
+            </h3>
+
+            <div class="mt-2">
+                <span class="text-[#DB4444] font-semibold">
+                    $560
+                </span>
+            </div>
+
+            <div class="mt-2 text-[#FFAD33]">
+                ★★★★★ <span class="text-gray-500">(65)</span>
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <div class="bg-[#F5F5F5] rounded relative p-6">
+
+                <button class="absolute right-4 top-4 bg-white w-8 h-8 rounded-full flex items-center justify-center">
+                    👁
+                </button>
+
+                <img src="./src/images/keyboard.png"
+                    class="h-[180px] mx-auto object-contain">
+
+                <button class="w-full bg-black text-white py-3 mt-6 flex justify-center items-center gap-3">
+                    🛒 Add To Cart
+                </button>
+
+            </div>
+
+            <h3 class="font-medium mt-4">
+                AK-900 Wired Keyboard
+            </h3>
+
+            <div class="mt-2">
+                <span class="text-[#DB4444] font-semibold">
+                    $200
+                </span>
+            </div>
+
+            <div class="mt-2 text-[#FFAD33]">
+                ★★★★★ <span class="text-gray-500">(65)</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 </body>
 </html>
