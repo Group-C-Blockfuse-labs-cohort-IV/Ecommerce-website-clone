@@ -439,6 +439,9 @@
   .ml-42 {
     margin-left: calc(var(--spacing) * 42);
   }
+  .ml-44 {
+    margin-left: calc(var(--spacing) * 44);
+  }
   .ml-\[100px\] {
     margin-left: 100px;
   }
@@ -1574,9 +1577,19 @@
       left: calc(var(--spacing) * 14);
     }
   }
+  .md\:mx-3\.5 {
+    @media (width >= 48rem) {
+      margin-inline: calc(var(--spacing) * 3.5);
+    }
+  }
   .md\:mx-32\.5 {
     @media (width >= 48rem) {
       margin-inline: calc(var(--spacing) * 32.5);
+    }
+  }
+  .md\:mx-33\.5 {
+    @media (width >= 48rem) {
+      margin-inline: calc(var(--spacing) * 33.5);
     }
   }
   .md\:mt-0 {
