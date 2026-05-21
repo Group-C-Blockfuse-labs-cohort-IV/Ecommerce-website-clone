@@ -1555,6 +1555,27 @@
       display: flex;
     }
   }
+  .hover\:w-65 {
+    &:hover {
+      @media (hover: hover) {
+        width: calc(var(--spacing) * 65);
+      }
+    }
+  }
+  .hover\:w-67 {
+    &:hover {
+      @media (hover: hover) {
+        width: calc(var(--spacing) * 67);
+      }
+    }
+  }
+  .hover\:cursor-pointer {
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
+      }
+    }
+  }
   .hover\:bg-\[\#E0E0E0\] {
     &:hover {
       @media (hover: hover) {
@@ -1566,6 +1587,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-100);
+      }
+    }
+  }
+  .hover\:bg-red-400 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-red-400);
       }
     }
   }
