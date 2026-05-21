@@ -1592,6 +1592,16 @@
       margin-inline: calc(var(--spacing) * 33.5);
     }
   }
+  .md\:mx-35\.5 {
+    @media (width >= 48rem) {
+      margin-inline: calc(var(--spacing) * 35.5);
+    }
+  }
+  .md\:mx-37\.5 {
+    @media (width >= 48rem) {
+      margin-inline: calc(var(--spacing) * 37.5);
+    }
+  }
   .md\:mt-0 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 0);
