@@ -1637,6 +1637,16 @@
       width: 80%;
     }
   }
+  .md\:w-\[465\] {
+    @media (width >= 48rem) {
+      width: 465;
+    }
+  }
+  .md\:w-\[465px\] {
+    @media (width >= 48rem) {
+      width: 465px;
+    }
+  }
   .md\:w-auto {
     @media (width >= 48rem) {
       width: auto;
@@ -1660,6 +1670,11 @@
   .md\:grid-cols-\[25\%_75\%\] {
     @media (width >= 48rem) {
       grid-template-columns: 25% 75%;
+    }
+  }
+  .md\:flex-col {
+    @media (width >= 48rem) {
+      flex-direction: column;
     }
   }
   .md\:flex-row {
