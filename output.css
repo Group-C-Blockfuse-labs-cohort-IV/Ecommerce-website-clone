@@ -1424,6 +1424,13 @@
       display: flex;
     }
   }
+  .hover\:w-38 {
+    &:hover {
+      @media (hover: hover) {
+        width: calc(var(--spacing) * 38);
+      }
+    }
+  }
   .hover\:w-67 {
     &:hover {
       @media (hover: hover) {
@@ -1463,6 +1470,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-red-400);
+      }
+    }
+  }
+  .hover\:text-\[18px\] {
+    &:hover {
+      @media (hover: hover) {
+        font-size: 18px;
       }
     }
   }
