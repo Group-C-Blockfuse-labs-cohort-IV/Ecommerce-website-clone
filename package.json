@@ -4,7 +4,9 @@
   "description": "A modern responsive ecommerce website built with HTML and tailwind CSS.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @tailwindcss/cli -i src/input.css -o output.css && npx @tailwindcss/cli -i src/input.css -o src/output.css",
+    "watch": "npx @tailwindcss/cli -i src/input.css -o output.css --watch"
   },
   "repository": {
     "type": "git",
