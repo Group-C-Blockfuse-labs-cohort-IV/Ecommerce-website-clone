@@ -8,18 +8,6 @@
     <link rel="stylesheet" href="src/output.css">
 
 </head>
-<<<<<<< HEAD
-<body class="bg-white min-h-screen flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
-  <section class="max-w-7xl w-full mx-auto" id="new-arrival-section">
-   
-    <div class="flex flex-col gap-4 mb-10 select-none">
-      <div class="flex items-center gap-4">
-      
-        <span class="w-5 h-10 bg-[#DB4444] rounded" id="category-accent-bar"></span>
-        <span class="text-[#DB4444] font-semibold text-base tracking-wide" id="category-label">Featured</span>
-      </div>
-      <h2 class="text-black font-bold text-3xl md:text-4xl tracking-wider" id="section-heading">New Arrival</h2>
-=======
 <body>
     
     <header>
@@ -433,7 +421,6 @@
         <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
         <i class="fa-solid fa-star" style="color: gainsboro"></i>(145)
       </p>
->>>>>>> f78fa4ccb8f0db9b8d3f749024c90de05865a8ce
     </div>
   </div>
 
@@ -463,106 +450,10 @@
     <img src="image/Colour Chnage (1).png" class="pt-2">
   </div>
 
-<<<<<<< HEAD
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px]" id="arrival-products-grid radius-5xl">
-      
-      <!-- Left Column: PlayStation 5 Card -->
-      <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 md:p-10 min-h-[450px] lg:min-h-[600px] group transition-all duration-300 hover:shadow-xl hover:shadow-black/10" id="ps5-card">
-        <!-- Soft blue radial glow behind the PS5 image for high fidelity -->
-        <div class="absolute bottom-0 right-0 w-full h-[85%] bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.15)_0%,rgba(0,0,0,0)_70%)] pointer-events-none z-0"></div>
-        
-        <!-- Product Image (placed absolutely at the right/bottom) -->
-        <img src="./src/images/ps5-slim-goedkope-playstation_large 1.png" 
-             alt="PlayStation 5" 
-             class="absolute bottom-0 right-0 max-h-[85%] w-[85%] lg:w-auto object-contain z-0 transition-transform duration-500 group-hover:scale-105 select-none pointer-events-none" 
-             id="ps5-image" />
-        
-        <!-- Content Container -->
-        <div class="relative z-10 max-w-[270px] mt-auto">
-          <h3 class="text-white text-2xl font-semibold tracking-wider mb-2" id="ps5-title">PlayStation 5</h3>
-          <p class="text-[#F5F5F5] text-sm font-light leading-relaxed mb-4" id="ps5-description">Black and White version of the PS5 coming out on sale.</p>
-          <a href="#" 
-             class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block" 
-             id="ps5-shop-now">Shop Now</a>
-        </div>
-      </div>
-
-      <!-- Right Column: Flex container holding Women's Collections and Bottom Row -->
-      <div class="flex flex-col gap-[30px]" id="right-column-container">
-        
-        <!-- Top Row: Women's Collections Card -->
-        <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 md:p-8 min-h-[284px] group transition-all duration-300 hover:shadow-xl hover:shadow-black/10" id="women-card">
-          <!-- Subtle highlight background circle for the image -->
-          <div class="absolute bottom-0 right-0 w-[50%] h-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.06)_0%,rgba(0,0,0,0)_80%)] pointer-events-none z-0"></div>
-          
-          <!-- Product Image (aligned to the right) -->
-          <img src="./src/images/attractive-woman-wearing-hat-posing-black-background 1.png" 
-               alt="Women's Collections" 
-               class="absolute bottom-0 right-0 h-full w-[45%] md:w-auto object-cover md:object-contain z-0 transition-transform duration-500 group-hover:scale-105 select-none pointer-events-none grayscale contrast-115 brightness-95" 
-               id="women-image" />
-          
-          <!-- Content Container -->
-          <div class="relative z-10 max-w-[270px] mt-auto">
-            <h3 class="text-white text-2xl font-semibold tracking-wider mb-2" id="women-title">Women's Collections</h3>
-            <p class="text-[#F5F5F5] text-sm font-light leading-relaxed mb-4" id="women-description">Featured woman collections that give you another vibe.</p>
-            <a href="#" 
-               class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block" 
-               id="women-shop-now">Shop Now</a>
-          </div>
-        </div>
-
-        <!-- Bottom Row: Speakers and Perfume Card -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-[30px]" id="bottom-cards-grid">
-          
-          <!-- Speakers Card -->
-          <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 min-h-[284px] group transition-all duration-300 hover:shadow-xl hover:shadow-black/10" id="speakers-card">
-            <!-- Circular glowing highlight centered behind the speakers -->
-            <div class="absolute inset-0 m-auto w-[65%] h-[65%] rounded-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.12)_0%,rgba(0,0,0,0)_70%)] pointer-events-none z-0"></div>
-            
-            <!-- Product Image -->
-            <img src="./src/images/Frame 707.png" 
-                 alt="Speakers" 
-                 class="absolute inset-0 m-auto max-h-[65%] max-w-[65%] object-contain z-0 transition-transform duration-500 group-hover:scale-110 select-none pointer-events-none" 
-                 id="speakers-image" />
-            
-            <!-- Content Container -->
-            <div class="relative z-10 mt-auto">
-              <h3 class="text-white text-xl font-semibold tracking-wider mb-2" id="speakers-title">Speakers</h3>
-              <p class="text-[#F5F5F5] text-xs font-light leading-relaxed mb-4" id="speakers-description">Amazon wireless speakers</p>
-              <a href="#" 
-                 class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block" 
-                 id="speakers-shop-now">Shop Now</a>
-            </div>
-          </div>
-
-          <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 min-h-[284px] group transition-all duration-300 hover:shadow-xl hover:shadow-black/10" id="perfume-card">
-            <div class="absolute inset-0 m-auto w-[65%] h-[65%] rounded-full bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.1)_0%,rgba(0,0,0,0)_70%)] pointer-events-none z-0"></div>
-            
-            
-            <img src="./src/images/652e82cd70aa6522dd785109a455904c.png" 
-                 alt="Perfume" 
-                 class="absolute inset-0 m-auto max-h-[65%] max-w-[65%] object-contain z-0 transition-transform duration-500 group-hover:scale-110 select-none pointer-events-none" 
-                 id="perfume-image" />
-            
-          
-            <div class="relative z-10 mt-auto">
-              <h3 class="text-white text-xl font-semibold tracking-wider mb-2" id="perfume-title">Perfume</h3>
-              <p class="text-[#F5F5F5] text-xs font-light leading-relaxed mb-4" id="perfume-description">GUCCI INTENSE OUD EDP</p>
-              <a href="#" 
-                 class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block" 
-                 id="perfume-shop-now">Shop Now</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-=======
   <div class="bg-gray-100 h-40 w-52 relative">
     <img src="image/boot.png" class="w-24 ml-10 pt-7">
     <img src="image/feeea.png" class="ml-42 w-6 absolute top-1">
     <p class="mt-20">Jr. Zoom Soccer Cleats</p>
->>>>>>> f78fa4ccb8f0db9b8d3f749024c90de05865a8ce
 
     <div class="flex gap-2.5 pt-3 flex-wrap">
       <p class="text-red-600">$360</p>
