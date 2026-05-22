@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +21,7 @@
 
     <header>
 
- <div class="bg-black text-white text-[8px] md:text-sm py-2">
+        <div class="bg-black text-white text-[8px] md:text-sm py-2">
 
             <div class="flex justify-between px-6 items-center max-w-7xl mx-auto">
 
@@ -41,15 +42,90 @@
             </div>
         </div>
 
+        <div class=" flex justify-between items-center mx-6 md:mx-28 pt-3 md:pt-6 md:pb-3 pb-2 ">
+
+            <p class="font-bold text-black text-lg md:text-3xl">Exclusive</p>
+
+            <div>
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+                <label for="menu-toggle" class="md:hidden cursor-pointer text-xl">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <nav>
+                    <ul class="hidden md:flex gap-6 items-center text-[16px] font-normal">
+                        <li><a class="border-b" href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+
+                <ul
+                    class="absolute top-full left-0 w-full text-sm bg-white shadow-md flex-col gap-4 p-4 md:hidden hidden peer-checked:flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+
+            </div>
+
+            <div class="hidden md:flex md:items-center gap-4 md:mr-7">
+
+                <div class="bg-[#f5f5f5] flex items-center rounded-sm ">
+                    <input class="px-4 py-2 w-full text-xs " type="text" placeholder="What are you looking for?">
+
+                    <img class="w-4 h-4 mr-3 object-contain" src="Images/Component 2.png" alt="search">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <hr class="text-gray-300">
+
+    <!-- Login Section -->
+    <section class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 px-6 md:px-12 lg:px-20 py-10 max-w-7xl mx-auto">
+
+    <!-- Left Image -->
+    <img 
+        src="images/Side Image.png" 
+        alt="sign-up-image" 
+        class="w-full max-w-[300px] md:max-w-[500px] lg:max-w-[650px] h-auto shrink-0"
+    >
+
+    <!-- Right Content -->
+    <div class="w-full max-w-md flex flex-col justify-center">
+
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-2">
+            Login to Exclusive
+        </h2>
+
+        <p class="text-gray-600 mb-8">
+            Enter your details below
+        </p>
+
+        <form class="flex flex-col gap-6">
+            <input type="text" id="email" placeholder="Email or Phone Number" class="w-full border-b-2 border-gray-300 py-2">
+
+            <input  type="password" id="password" placeholder="Password" class="w-full border-b-2 border-gray-300 py">
+
+            <div class="flex items-center justify-between mt-6">
+                <button type="submit" class="bg-secondary text-white px-8 py-3 rounded-md">Login</button>
+                <a href="#" class="text-secondary text-sm hover:underline">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+
+</section>
 
 
 
 
 
 
-</header>
-
-    
 
 
 
@@ -75,10 +151,6 @@
 
 
 
-
-
-
-    
 
 
 
@@ -197,4 +269,5 @@
     </footer>
 
 </body>
+
 </html>
