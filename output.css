@@ -1340,6 +1340,10 @@
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+  .brightness-0 {
+    --tw-brightness: brightness(0%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
   .brightness-95 {
     --tw-brightness: brightness(95%);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -1355,6 +1359,10 @@
   }
   .grayscale {
     --tw-grayscale: grayscale(100%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .invert {
+    --tw-invert: invert(100%);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition {
@@ -1422,6 +1430,20 @@
       }
     }
   }
+  .group-hover\:opacity-0 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 0%;
+      }
+    }
+  }
+  .group-hover\:opacity-100 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
+  }
   .peer-checked\:flex {
     &:is(:where(.peer):checked ~ *) {
       display: flex;
@@ -1486,10 +1508,10 @@
       }
     }
   }
-  .hover\:bg-\[url\(\'\/images\/Category-Camera\.svg\'\)\] {
+  .hover\:bg-secondary {
     &:hover {
       @media (hover: hover) {
-        background-image: url('/images/Category-Camera.svg');
+        background-color: var(--color-secondary);
       }
     }
   }
@@ -1511,6 +1533,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-gray-500);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
       }
     }
   }
