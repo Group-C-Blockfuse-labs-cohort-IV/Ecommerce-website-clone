@@ -1,13 +1,1023 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce website</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="src/output.css">
+
 </head>
 
-<body>
-    
+<body class="overflow-x-hidden">
+    <header>
+
+        <div class="bg-black text-white text-[6px] md:text-sm py-3 ">
+
+            <div class="flex justify-between md:px-7 items-center md:max-w-7xl md:mx-auto">
+
+                <div class="flex-1"></div>
+                <div class="flex gap-2 items-center text-center">
+                    <p class="text-[6px] md:text-sm">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+                    <p class="font-semibold underline text-[6px] md:text-sm whitespace-nowrap ">Shop Now</p>
+                </div>
+
+                <div class="flex flex-1 justify-end relative right-4">
+                    <select name="" id="" class="bg-black text-white">
+                        <option value="english">English</option>
+                        <option value="english">Igbo</option>
+                        <option value="english">Hausa</option>
+                        <option value="english">Yoruba</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class=" flex justify-between items-center mx-6 md:mx-24 md:pl-8 pt-3 md:pt-6 md:pb-3 pb-2 ">
+
+            <p class="font-bold text-black text-lg md:text-3xl">Exclusive</p>
+
+            <div>
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+                <label for="menu-toggle" class="md:hidden cursor-pointer text-xl">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <nav>
+                    <ul class="hidden md:flex gap-6 items-center text-[16px] font-normal">
+                        <li><a class="border-b" href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+
+                <ul
+                    class="absolute top-full left-0 w-full text-sm bg-white shadow-md flex-col gap-4 p-4 md:hidden hidden peer-checked:flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+
+            </div>
+
+            <div class="hidden md:flex md:items-center gap-4 md:mr-7">
+
+                <div class="bg-[#f5f5f5] flex items-center rounded-sm ">
+                    <input class="px-4 py-2 w-full text-xs " type="text" placeholder="What are you looking for?">
+
+                    <img class="w-4 h-4 mr-3 object-contain" src="Images/Component 2.png" alt="search">
+                </div>
+
+                <div class="flex gap-5 items-center">
+
+                    <img class="w-6 h-6 object-center" src="Images/Wishlist.png" alt="wishlist icon">
+
+                    <img class="w-6 h-6 object-contain" src="Images/Cart1 with buy.png" alt="cart icon">
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <hr class="text-gray-300">
+
+
+    <section class="md:mx-32 mx-5">
+
+        <div class="grid grid-cols-1 md:grid-cols-[25%_75%]">
+
+            <div
+                class="md:text-[16px] text-sm  md:border-r md:border-gray-300 md:pt-10 md:pr-10 w-[80%] flex flex-col gap-1.5 max-sm:mx-1 max-sm:my-3 md:gap-4">
+                <span class="flex gap-10">
+
+                    <p>Women’s Fashion</p>
+                    <img class="object-contain w-4 relative left-8" src="Images/DropDown.png" alt="">
+                </span>
+
+                <span class="flex gap-10 ">
+                    <p>Men’s Fashion</p>
+                    <img class="object-contain w-4 relative md:left-14 left-13 " src="Images/DropDown.png" alt="">
+                </span>
+
+                <p>Electronics</p>
+                <p>Home & Lifestyle</p>
+                <p>Medicines</p>
+                <p>Sports & Outdoor</p>
+                <p>Baby’s & Toys</p>
+                <p>Groceries & Pets</p>
+                <p>Health & Beauty</p>
+            </div>
+
+            <div class="text-white bg-black md:mt-10 p-5 md">
+                <div class="flex justify-between md:mt-4">
+                    <div class="md:ml-14 ml-4 ">
+
+                        <span class="flex gap-3 md:gap-5 items-center pb-1 md:pb-3">
+                            <img class="w-3 md:w-8 object-contain" src="Images/1200px-Apple_gray_logo 1.png"
+                                alt="apple logo">
+                            <p class="text-[8px] md:text-[16px] whitespace-nowrap text-ellipsis">iPhone 14 Series</p>
+                        </span>
+
+                        <p class="text-xs md:text-5xl font-semibold">Up to 10% </p>
+                        <p class="text-xs md:text-5xl font-semibold md:pt-3 text-ellipsis whitespace-nowrap">off Voucher
+                        </p>
+
+                        <span class="flex items-center gap-1 text-[7px] md:gap-2 md:text-[16px] mt-2 md:mt-5">
+                            <p class="border-b">Shop Now</p>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <img class="w-[60%] md:w-[80%] relative left-20 md:bottom-5"
+                            src="Images/hero_endframe__cvklg0xk3w6e_large 2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-3 pt-6 md:pt-0">
+                    <div class="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-gray-400"></div>
+                    <div class="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-gray-400"></div>
+                    <div class="bg-[#db4444] rounded-full w-2 h-2 md:w-3 md:h-3 border border-white"></div>
+                    <div class="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-gray-400"></div>
+                    <div class="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-gray-400"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- SECTION 2 -->
+    <section class="mx-4 mt-16 sm:mx-8 lg:mx-32 lg:mt-20">
+        <div class="flex gap-5">
+            <img src="./ images_folder_01/red_tag.svg" alt="">
+            <h2 class="text-secondary text-[18px] font-semibold mt-2">Today's</h2>
+        </div>
+        <div class="mt-7 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+            <div class="flex gap-6 items-center">
+                <h2 class="text-xl font-semibold sm:text-2xl lg:text-4xl">Flash Sales</h2>
+                <img class=" w-64" src="./ images_folder_01/time.svg" alt="">
+            </div>
+            <div class="flex gap-3">
+                <img class="w-12.5 h-12.5" src="./ images_folder_01/Fill With Left Arrow.svg" alt="">
+                <img class="w-12.5 h-12.5" src="./ images_folder_01/Fill with Right Arrow.svg" alt="">
+            </div>
+        </div>
+        <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
+
+            <div>
+                <div class="relative flex h-80 w-full items-center justify-center bg-primary">
+                    <img class="w-64 transition-all hover:w-67" src="./ images_folder_01/gamepad.svg" alt="">
+                    <h2
+                        class="absolute left-3 top-3 bg-secondary text-[14px] w-13.75 h-6.5 text-white font-semibold text-center rounded-sm pt-0.5">
+                        -40%</h2>
+                    <img class="absolute right-3 top-3" src="./ images_folder_01/like.svg" alt="">
+                </div>
+                <div class="mt-4">
+                    <h2 class="text-[17px] font-medium">HAVIT HV-G92 Gamepad</h2>
+                    <p class="mt-2"> <span class="text-secondary font-medium">$120</span>
+                        <span class="ml-4 font-semibold line-through decoration-black/50 text-black/50">$160</span>
+                    </p>
+                    <div class="flex mt-2 gap-2">
+                        <img class="" src="./ images_folder_01/Five star.svg" alt="">
+                        <p class="text-black/50 font-semibold">(88)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="relative flex h-80 w-full items-center justify-center bg-primary">
+                    <img class="w-64" src="./ images_folder_01/keyboard.svg" alt="">
+                    <h2
+                        class="absolute left-3 top-3 bg-secondary text-[14px] w-13.75 h-6.5 text-white font-semibold text-center rounded-sm pt-0.5">
+                        -35%</h2>
+                    <img class="absolute right-3 top-3" src="./ images_folder_01/like.svg" alt="">
+                    <button class="absolute bottom-0 left-0 h-10.25 w-full bg-black text-white">Add To Cart</button>
+                </div>
+                <div class="mt-4">
+                    <h2 class="text-[17px] font-medium">AK-900 Wired Keyboard</h2>
+                    <p class="mt-2"> <span class="text-secondary font-medium">$960</span>
+                        <span class="ml-4 font-semibold line-through decoration-black/50 text-black/50">$1160</span>
+                    </p>
+                    <div class="flex mt-2 gap-2">
+                        <img class="" src="./ images_folder_01/star.png" alt="">
+                        <p class="text-black/50 font-semibold">(75)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="relative flex h-80 w-full items-center justify-center bg-primary">
+                    <img class="w-64" src="./ images_folder_01/television.svg" alt="">
+                    <h2
+                        class="absolute left-3 top-3 bg-secondary text-[14px] w-13.75 h-6.5 text-white font-semibold text-center rounded-sm pt-0.5">
+                        -30%</h2>
+                    <img class="absolute right-3 top-3" src="./ images_folder_01/like.svg" alt="">
+                </div>
+                <div class="mt-4">
+                    <h2 class="text-[17px] font-medium">IPS LCD Gaming Monitor</h2>
+                    <p class="mt-2"> <span class="text-secondary font-medium">$370</span>
+                        <span class="ml-4 font-semibold line-through decoration-black/50 text-black/50">$400</span>
+                    </p>
+                    <div class="flex mt-2 gap-2">
+                        <img class="" src="./ images_folder_01/Five star.svg" alt="">
+                        <p class="text-black/50 font-semibold">(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="relative flex h-80 w-full items-center justify-center bg-primary">
+                    <img class="w-36" src="./ images_folder_01/chair.svg" alt="">
+                    <h2
+                        class="absolute left-3 top-3 bg-secondary text-[14px] w-13.75 h-6.5 text-white font-semibold text-center rounded-sm pt-0.5">
+                        -25%</h2>
+                    <img class="absolute right-3 top-3" src="./ images_folder_01/like.svg" alt="">
+                </div>
+                <div class="mt-4">
+                    <h2 class="text-[17px] font-medium">S-Series Comfort Chair </h2>
+                    <p class="mt-2"> <span class="text-secondary font-medium">$375</span>
+                        <span class="ml-4 font-semibold line-through decoration-black/50 text-black/50">$400</span>
+                    </p>
+                    <div class="flex mt-2 gap-2">
+                        <img class="" src="./ images_folder_01/Five star.svg" alt="">
+                        <p class="text-black/50 font-semibold">(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="relative flex h-80 w-full items-center justify-center bg-primary">
+                    <img class="w-36" src="./ images_folder_01/chair.svg" alt="">
+                    <h2
+                        class="absolute left-3 top-3 bg-secondary text-[14px] w-13.75 h-6.5 text-white font-semibold text-center rounded-sm pt-0.5">
+                        -25%</h2>
+                    <img class="absolute right-3 top-3" src="./ images_folder_01/like.svg" alt="">
+                </div>
+                <div class="mt-4">
+                    <h2 class="text-[17px] font-medium">S-Series Comfort Chair </h2>
+                    <p class="mt-2"> <span class="text-secondary font-medium">$375</span>
+                        <span class="ml-4 font-semibold line-through decoration-black/50 text-black/50">$400</span>
+                    </p>
+                    <div class="flex mt-2 gap-2">
+                        <img class="" src="./ images_folder_01/fo" alt="">
+                        <p class="text-black/50 font-semibold">(99)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 flex justify-center">
+            <button
+                class="h-14 w-58.5 rounded-sm bg-secondary font-semibold text-white hover:cursor-pointer hover:bg-red-400">View
+                All
+                Products</button>
+        </div>
+    </section>
+    <hr class="mx-4 mt-14 border border-black/10 sm:mx-8 lg:mx-32">
+
+    <!-- SECTION 2  -->
+
+     <section class="mx-4 mt-20 sm:mx-8 lg:mx-32 lg:mt-24">
+        <div class="flex gap-5">
+            <img src="./ images_folder_01/red_tag.svg" alt="">
+            <h2 class="text-secondary text-[18px] font-semibold mt-2">Categories</h2>
+        </div>
+        <div class="mt-7 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+            <div class="flex gap-2">
+                <h2 class="text-3xl font-semibold sm:text-4xl lg:text-5xl">Browse By Category</h2>
+
+            </div>
+            <div class="flex gap-3">
+                <img class="w-12.5 h-12.5" src="./ images_folder_01/Fill With Left Arrow.svg" alt="">
+                <img class="w-12.5 h-12.5" src="./ images_folder_01/Fill with Right Arrow.svg" alt="">
+            </div>
+        </div>
+        <div class="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6 lg:gap-6">
+
+            <div
+                class="group h-40 border border-[#0000004D] flex flex-col items-center justify-center gap-y-3 sm:h-48 hover:bg-secondary hover:text-white duration-300">
+                <div class=" relative w-20 h-20">
+                    <img class="absolute inset-0 object-contain transition-opacity duration-200 group-hover:opacity-0 w-20 h-20"
+                        src="./ images_folder_01/Category-CellPhone.svg" alt="">
+                    <img class="invert brightness-0 absolute inset-0 object-contain transition-opacity opacity-0 duration-300 group-hover:opacity-100 w-20 h-20"
+                        src="./ images_folder_01/Category-CellPhone.svg" alt="">
+                </div>
+                <p class="text-[19px] text-center">Phones</p>
+            </div>
+            <div
+                class="group h-40 border border-[#0000004D] flex flex-col items-center justify-center gap-y-3 sm:h-48 hover:bg-secondary hover:text-white duration-300">
+                <div class=" relative w-20 h-20">
+                    <img class="absolute inset-0 object-contain transition-opacity duration-200 group-hover:opacity-0 w-20 h-20"
+                        src="./ images_folder_01/Category-Computer.svg" alt="">
+                    <img class="invert brightness-0 absolute inset-0 object-contain transition-opacity opacity-0 duration-300 group-hover:opacity-100 w-20 h-20"
+                        src="./ images_folder_01/Category-Computer.svg" alt="">
+                </div>
+                <p class="text-[19px] text-center">Computers</p>
+            </div>
+            <div
+                class="group h-40 border border-[#0000004D] flex flex-col items-center justify-center gap-y-3 sm:h-48 hover:bg-secondary hover:text-white duration-300">
+                <div class=" relative w-20 h-20">
+                    <img class="absolute inset-0 object-contain transition-opacity duration-200 group-hover:opacity-0 w-20 h-20"
+                        src="./ images_folder_01/Category-SmartWatch.svg" alt="">
+                    <img class="invert brightness-0 absolute inset-0 object-contain transition-opacity opacity-0 duration-300 group-hover:opacity-100 w-20 h-20"
+                        src="./ images_folder_01/Category-SmartWatch.svg" alt="">
+                </div>
+                <p class="text-[19px] text-center">SmartWatch</p>
+            </div>
+            <div
+                class="group h-40 border border-[#0000004D] flex flex-col items-center justify-center gap-y-3 sm:h-48 hover:bg-secondary hover:text-white duration-300">
+                <div class=" relative w-20 h-20">
+                    <img class="absolute inset-0 object-contain transition-opacity duration-200 group-hover:opacity-0 w-20 h-20"
+                        src="./ images_folder_01/Category-Camera (1).svg" alt="">
+                    <img class="invert brightness-0 absolute inset-0 object-contain transition-opacity opacity-0 duration-300 group-hover:opacity-100 w-20 h-20"
+                        src="./ images_folder_01/Category-Camera (1).svg" alt="">
+                </div>
+                <p class="text-[19px] text-cente">Camera</p>
+            </div>
+            <div
+                class="group h-40 border border-[#0000004D] flex flex-col items-center justify-center gap-y-3 sm:h-48 hover:bg-secondary hover:text-white duration-300">
+                <div class=" relative w-20 h-20">
+                    <img class="absolute inset-0 object-contain transition-opacity duration-200 group-hover:opacity-0 w-20 h-20"
+                        src="./ images_folder_01/Category-Headphone.svg" alt="">
+                    <img class="invert brightness-0 absolute inset-0 object-contain transition-opacity opacity-0 duration-300 group-hover:opacity-100 w-20 h-20"
+                        src="./ images_folder_01/Category-Headphone.svg" alt="">
+                </div>
+                <p class="text-[19px] text-center">Headphones</p>
+            </div>
+            <div
+                class="group h-40 border border-[#0000004D] flex flex-col items-center justify-center gap-y-3 sm:h-48 hover:bg-secondary hover:text-white duration-300">
+                <div class=" relative w-20 h-20">
+                    <img class="absolute inset-0 object-contain transition-opacity duration-200 group-hover:opacity-0 w-20 h-20"
+                        src="./ images_folder_01/Category-Gamepad.svg" alt="">
+                    <img class="invert brightness-0 absolute inset-0 object-contain transition-opacity opacity-0 duration-300 group-hover:opacity-100 w-20 h-20"
+                        src="./ images_folder_01/Category-Gamepad.svg" alt="">
+                </div>
+                <p class="text-[19px] text-center">Gaming</p>
+            </div>
+        </div>
+    </section>
+    <hr class="mx-4 mt-20 mb-5 border border-black/10 sm:mx-8 lg:mx-32">
+
+    <section>
+        <div class="flex items-center gap-3 mx-4 sm:mx-8 lg:mx-28 mt-14 pl-4">
+            <img src="./ images_folder_01/image.png" alt="" class="w-4 h-8 sm:w-5 sm:h-10">
+            <h1 class="text-amber-600 font-medium text-sm  sm:text-base">
+                This Month
+            </h1>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-between items-center  mx-4 sm:mx-8 lg:mx-32 mt-6">
+            <h1 class="font-bold text-2xl sm:text-4xl">
+                Best Selling Products
+            </h1>
+
+            <button class="border bg-secondary px-6 py-3 text-white rounded-md hover:opacity-90 transition">
+                View All
+            </button>
+        </div>
+
+        <!--CARDS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 sm:px-8 lg:px-32 mt-10">
+
+            <!--  First Card  -->
+            <div>
+                <div class="relative bg-primary rounded-lg h-60 flex items-center justify-center">
+                    <img src="./ images_folder_01/jacket.png" alt="" class="w-36 h-48 object-contain">
+
+                    <div class="absolute top-4 right-4 space-y-2">
+                        <img src="./ images_folder_01/love.png" alt="" class="w-8 h-8">
+                        <img src="./ images_folder_01/eye.png" alt="" class="w-8 h-8">
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="font-black">The north coat</h2>
+
+                    <p>
+                        <span class="text-red-700">$260</span>
+                        <span class="line-through text-gray-500">$360</span>
+                    </p>
+
+                    <div class="flex items-center gap-1 mt-2 flex-wrap">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <p>(65)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--  SecondCard  -->
+            <div>
+                <div class="relative bg-primary rounded-lg h-60 flex items-center justify-center">
+                    <img src="./ images_folder_01/bag.png" alt="" class="w-36 h-48 object-contain">
+
+                    <div class="absolute top-4 right-4 space-y-2">
+                        <img src="./ images_folder_01/love.png" alt="" class="w-8 h-8">
+                        <img src="./ images_folder_01/eye.png" alt="" class="w-8 h-8">
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="font-black">Gucci duffle bag</h2>
+
+                    <p>
+                        <span class="text-red-700">$960</span>
+                        <span class="line-through text-gray-500">$1160</span>
+                    </p>
+
+                    <div class="flex items-center gap-1 mt-2 flex-wrap">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/half star.png" alt="" class="w-5 h-5">
+                        <p>(65)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Third Card  -->
+            <div>
+                <div class="relative bg-primary rounded-lg h-60 flex items-center justify-center">
+                    <img src="./ images_folder_01/speaker.png" alt="" class="w-36 h-48 object-contain">
+
+                    <div class="absolute top-4 right-4 space-y-2">
+                        <img src="./ images_folder_01/love.png" alt="" class="w-8 h-8">
+                        <img src="./ images_folder_01/eye.png" alt="" class="w-8 h-8">
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="font-black">RGB liquid CPU Cooler</h2>
+
+                    <p>
+                        <span class="text-red-700">$160</span>
+                        <span class="line-through text-gray-500">$170</span>
+                    </p>
+
+                    <div class="flex items-center gap-1 mt-2 flex-wrap">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/half star.png" alt="" class="w-5 h-5">
+                        <p>(65)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Fourth Card -->
+            <div>
+                <div class="relative bg-primary rounded-lg h-60 flex items-center justify-center">
+                    <img src="./ images_folder_01/chair.png" alt="" class="w-36 h-48 object-contain">
+
+                    <div class="absolute top-4 right-4 space-y-2">
+                        <img src="./ images_folder_01/love.png" alt="" class="w-8 h-8">
+                        <img src="./ images_folder_01/eye.png" alt="" class="w-8 h-8">
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="font-black">Small BookSelf</h2>
+
+                    <p>
+                        <span class="text-red-700">$360</span>
+
+                    </p>
+
+                    <div class="flex items-center gap-1 mt-2 flex-wrap">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <img src="./ images_folder_01/star.png" alt="" class="w-5 h-5">
+                        <p>(65)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Music-Experience-Section -->
+    <section class="min-h-screen bg-white flex items-center justify-center p-6">
+        <!-- music-xp-card -->
+        <div
+            class="max-w-299 w-full bg-black p-6 md:py-10 flex flex-col md:flex-row items-center justify-between overflow-hidden ">
+            <div class="flex flex-col gap-4">
+                <h4 class="text-green-500 font-bold">Categories</h4>
+                <h2 class="text-white font-bold text-2xl md:text-4xl max-sm:text-center leading-tight ">Enhance Your<br>
+                    Music Experience
+                </h2>
+
+                <!-- Timer boxes -->
+
+                <div class="inline-flex flex-wrap gap-3">
+                    <span
+                        class="inline-flex flex-col  items-center justify-center bg-white text-black w-17 h-17 rounded-full text-sm text-center">
+                        <strong>23</strong>Hours
+                    </span>
+                    <span
+                        class="inline-flex flex-col items-center justify-center bg-white text-black w-17 h-17 rounded-full text-sm text-center">
+                        <strong>05 </strong>Days
+                    </span>
+                    <span
+                        class="inline-flex flex-col items-center justify-center bg-white text-black w-17 h-17 rounded-full text-sm text-center">
+                        <strong>59</strong> minutes
+                    </span>
+                    <span
+                        class=" inline-flex flex-col items-center justify-center bg-white text-black w-17 h-17 rounded-full text-sm text-center">
+                        <strong>35</strong>Seconds
+                    </span>
+                </div>
+                <button class="bg-tertiary px-10 py-3 w-fit font-medium rounded-md text-white">Buy Now!</button>
+            </div>
+            <img class="w-full max-w-142 object-contain drop-shadow-md md:max-w-md lg:max-w-lg mt-6 md:mt-0"
+                src="music-experience-section-img/jam_box.png" alt="jam_box">
+
+
+        </div>
+    </section>
+
+
+    <section class="md:mx-[88px]">
+
+        <div class="flex gap-4 pt-4 ml-4 sm:ml-10 items-center">
+            <div class="bg-red-600 h-6 w-3"></div>
+            <p class="text-red-600 font-medium">Our Products</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-10 pt-5 gap-4">
+            <p class="font-semibold text-2xl md:text-4xl text-center sm:text-left">
+                Explore Our Products
+            </p>
+            <img src="image/ddddarr.png" class="w-24 sm:w-auto">
+        </div>
+
+        <div class="flex flex-wrap gap-28  justify-center lg:justify-between  px-4 sm:px-10 pt-10">
+
+            <div class="bg-gray-100 h-40 w-52 relative">
+                <img src="image/cat.png" class="w-19 ml-15 pt-6">
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1">
+                <p class="mt-7">Breed Dry Dog Food</p>
+
+                <div class="flex gap-2.5 pt-3 flex-wrap">
+                    <p class="text-red-600">$100</p>
+                    <p>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: gainsboro"></i>
+                        <i class="fa-solid fa-star" style="color: gainsboro"></i>(32)
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 h-34 w-52   relative">
+                <img src="image/camera.png" class="w-36 ml-5">
+                <button class="bg-black text-white w-52 font-serif">Add to cart</button>
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1">
+                <p class="mt-3.5">CANON EOS DSLR Camera</p>
+
+                <div class="flex gap-2.5 pt-3 flex-wrap ">
+                    <p class="text-red-600">$360</p>
+                    <p>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: gainsboro"></i>(92)
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 h-40 w-52 relative">
+                <img src="image/lap.png" class="w-30 ml-8 pt-5">
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1">
+                <p class="mt-7">ASUS FHD Gaming Laptop</p>
+
+                <div class="flex gap-2.5 pt-3 flex-wrap">
+                    <p class="text-red-600">$700</p>
+                    <p>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>(325)
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 h-40 w-52 relative">
+                <img src="image/curology-j7pKVQrTUsM-unsplash 1.png" class="w-30 pt-5 ml-8">
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1">
+                <p class="mt-12 font-mono">Curology Product Set</p>
+
+                <div class="flex gap-2.5 pt-3 flex-wrap">
+                    <p class="text-red-600">$500</p>
+                    <p>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: gainsboro"></i>(145)
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex flex-wrap justify-center max-sm:gap-36 lg:justify-between  px-4 sm:px-10 pt-20 sm:pt-36">
+
+            <div class="bg-gray-100 h-40 w-52 relative">
+                <img src="image/benz.png" class="w-30 ml-8 pt-6">
+                <button class="bg-green-400 rounded-lg w-12 absolute top-2.5 ml-2 text-white">
+                    New
+                </button>
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1">
+                <p class="mt-20">Kids Electric Car</p>
+
+                <div class="flex gap-2.5 pt-3 flex-wrap">
+                    <p class="text-red-600">$100</p>
+                    <p>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59)"></i>(145)
+                    </p>
+                </div>
+
+                <img src="image/Colour Chnage (1).png" class="pt-2">
+            </div>
+
+            <div class="bg-gray-100 h-40 w-52 relative">
+                <img src="image/boot.png" class="w-24 ml-10 pt-7">
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1">
+                <p class="mt-20">Jr. Zoom Soccer Cleats</p>
+
+                <div class="flex gap-2.5 pt-3 flex-wrap">
+                    <p class="text-red-600">$360</p>
+                    <p>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59)"></i>(45)
+                    </p>
+                </div>
+
+                <img src="image/eeeeeeeerrt.png" class="pt-2">
+            </div>
+
+            <div class="bg-gray-100 h-40 w-52 relative">
+                <img src="image/pad.png" class="w-30 ml-8 pt-5">
+                <button class="bg-green-400 rounded-lg w-12 absolute top-2.5 ml-2 text-white">
+                    New
+                </button>
+
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1">
+                <p class="mt-17">GP11 Shooter USB Gamepad</p>
+
+                <div class="flex gap-2.5 pt-3 flex-wrap">
+                    <p class="text-red-600">$700</p>
+                    <p>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59)"></i>(55)
+                    </p>
+                </div>
+
+                <img src="image/Colour Chnage (1).png" class="pt-2">
+            </div>
+
+            <div class="bg-gray-100 h-40 w-52 relative">
+                <img src="image/jezzz.png" class="w-30 pt-5 ml-8">
+                <img src="image/feeea.png" class="ml-42 w-6 absolute top-1">
+                <p class="mt-17 font-mono">Quilted Satin Jacket</p>
+
+                <div class="flex gap-2.5 pt-3 flex-wrap">
+                    <p class="text-red-600">$500</p>
+                    <p>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 199, 59)"></i>(55)
+                    </p>
+                </div>
+
+                <img src="image/Colour Chnage.png" class="pt-2">
+            </div>
+
+        </div>
+
+        <div class=" mt-42 text-center py-6 ">
+            <button class="bg-red-500 border-2  text-white w-60 h-10 ">View Our Products</button>
+
+        </div>
+
+    </section>
+
+
+    <section class="bg-white min-h-screen flex items-center justify-center py-16 px-4 sm:px-6 lg:px-32 ">
+
+        <!-- Featured New Arrival Section -->
+        <div class="max-w-7xl w-full mx-auto" id="new-arrival-section">
+
+            <!-- Section Title & Category Block -->
+            <div class="flex flex-col gap-4 mb-10 select-none">
+                <div class="flex items-center gap-4">
+                    <!-- Red vertical bar accent -->
+                    <span class="w-5 h-10 bg-secondary rounded" id="category-accent-bar"></span>
+                    <span class="text-secondary font-semibold text-base tracking-wide"
+                        id="category-label">Featured</span>
+                </div>
+                <h2 class="text-black font-bold text-3xl md:text-4xl tracking-wider" id="section-heading">New Arrival
+                </h2>
+            </div>
+
+            <!-- Product Grid Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-7.5" id="arrival-products-grid radius-5xl">
+
+                <!-- Left Column: PlayStation 5 Card -->
+                <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 md:p-10 min-h-112.5 lg:min-h-150 group transition-all duration-300 hover:shadow-xl hover:shadow-black/10"
+                    id="ps5-card">
+                    <!-- Soft blue radial glow behind the PS5 image for high fidelity -->
+                    <div
+                        class="absolute bottom-0 right-0 w-full h-[85%] bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.15)_0%,rgba(0,0,0,0)_70%)] pointer-events-none z-0">
+                    </div>
+
+                    <!-- Product Image (placed absolutely at the right/bottom) -->
+                    <img src="./src/images/ps5-slim-goedkope-playstation_large 1.png" alt="PlayStation 5"
+                        class="absolute bottom-0 right-0 max-h-[85%] w-[85%] lg:w-auto object-contain z-0 transition-transform duration-500 group-hover:scale-105 select-none pointer-events-none"
+                        id="ps5-image" />
+
+                    <!-- Content Container -->
+                    <div class="relative z-10 max-w-67 mt-auto">
+                        <h3 class="text-white text-2xl font-semibold tracking-wider mb-2" id="ps5-title">PlayStation 5
+                        </h3>
+                        <p class="text-primary text-sm font-light leading-relaxed mb-4" id="ps5-description">Black and
+                            White version of the PS5 coming out on sale.</p>
+                        <a href="#"
+                            class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block"
+                            id="ps5-shop-now">Shop Now</a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Flex container holding Women's Collections and Bottom Row -->
+                <div class="flex flex-col gap-7.5" id="right-column-container">
+
+                    <!-- Top Row: Women's Collections Card -->
+                    <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 md:p-8 min-h-71 group transition-all duration-300 hover:shadow-xl hover:shadow-black/10"
+                        id="women-card">
+                        <!-- Subtle highlight background circle for the image -->
+                        <div
+                            class="absolute bottom-0 right-0 w-[50%] h-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.06)_0%,rgba(0,0,0,0)_80%)] pointer-events-none z-0">
+                        </div>
+
+                        <!-- Product Image (aligned to the right) -->
+                        <img src="./src/images/attractive-woman-wearing-hat-posing-black-background 1.png"
+                            alt="Women's Collections"
+                            class="absolute bottom-0 right-0 h-full w-[45%] md:w-auto object-cover md:object-contain z-0 transition-transform duration-500 group-hover:scale-105 select-none pointer-events-none grayscale contrast-115 brightness-95"
+                            id="women-image" />
+
+                        <!-- Content Container -->
+                        <div class="relative z-10 max-w-67 mt-auto">
+                            <h3 class="text-white text-2xl font-semibold tracking-wider mb-2" id="women-title">Women's
+                                Collections</h3>
+                            <p class="text-primary text-sm font-light leading-relaxed mb-4" id="women-description">
+                                Featured woman collections that give you another vibe.</p>
+                            <a href="#"
+                                class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block"
+                                id="women-shop-now">Shop Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row: Speakers and Perfume Card -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-7.5" id="bottom-cards-grid">
+
+                        <!-- Speakers Card -->
+                        <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 min-h-71 group transition-all duration-300 hover:shadow-xl hover:shadow-black/10"
+                            id="speakers-card">
+                            <!-- Circular glowing highlight centered behind the speakers -->
+                            <div
+                                class="absolute inset-0 m-auto w-[65%] h-[65%] rounded-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.12)_0%,rgba(0,0,0,0)_70%)] pointer-events-none z-0">
+                            </div>
+
+                            <!-- Product Image -->
+                            <img src="./src/images/Frame 707.png" alt="Speakers"
+                                class="absolute inset-0 m-auto max-h-[65%] max-w-[65%] object-contain z-0 transition-transform duration-500 group-hover:scale-110 select-none pointer-events-none"
+                                id="speakers-image" />
+
+                            <!-- Content Container -->
+                            <div class="relative z-10 mt-auto">
+                                <h3 class="text-white text-xl font-semibold tracking-wider mb-2" id="speakers-title">
+                                    Speakers</h3>
+                                <p class="text-primary text-xs font-light leading-relaxed mb-4"
+                                    id="speakers-description">Amazon wireless speakers</p>
+                                <a href="#"
+                                    class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block"
+                                    id="speakers-shop-now">Shop Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Perfume Card -->
+                        <div class="relative bg-black rounded overflow-hidden flex flex-col justify-end p-6 min-h-71 group transition-all duration-300 hover:shadow-xl hover:shadow-black/10"
+                            id="perfume-card">
+                            <!-- Circular gold highlight behind perfume -->
+                            <div
+                                class="absolute inset-0 m-auto w-[65%] h-[65%] rounded-full bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.1)_0%,rgba(0,0,0,0)_70%)] pointer-events-none z-0">
+                            </div>
+
+                            <!-- Product Image -->
+                            <img src="./src/images/652e82cd70aa6522dd785109a455904c.png" alt="Perfume"
+                                class="absolute inset-0 m-auto max-h-[65%] max-w-[65%] object-contain z-0 transition-transform duration-500 group-hover:scale-110 select-none pointer-events-none"
+                                id="perfume-image" />
+
+
+                            <div class="relative z-10 mt-auto">
+                                <h3 class="text-white text-xl font-semibold tracking-wider mb-2" id="perfume-title">
+                                    Perfume</h3>
+                                <p class="text-primary text-xs font-light leading-relaxed mb-4"
+                                    id="perfume-description">GUCCI INTENSE OUD EDP</p>
+                                <a href="#"
+                                    class="text-white font-medium text-base underline underline-offset-[6px] hover:text-[#E0E0E0] transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded py-1 inline-block"
+                                    id="perfume-shop-now">Shop Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Features/Services Section at the bottom -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 justify-center items-center mt-24 mb-16 select-none"
+                id="services-block">
+
+                <!-- Service 1: Fast Delivery -->
+                <div class="flex flex-col items-center text-center group" id="service-delivery">
+                    <div class="w-20 h-20 rounded-full bg-[#2F2F2F]/20 flex items-center justify-center transition-transform duration-300 group-hover:scale-105"
+                        id="delivery-outer-circle">
+                        <div class="w-14 h-14 rounded-full bg-black flex items-center justify-center"
+                            id="delivery-inner-circle">
+                            <!-- Delivery Truck SVG Icon -->
+                            <img src="./src/images/Servicesicon.png" alt="">
+                        </div>
+                    </div>
+                    <h3 class="text-black font-bold text-xl tracking-wider mt-6 uppercase" id="delivery-title">FREE AND
+                        FAST DELIVERY</h3>
+                    <p class="text-sm text-gray-500 mt-2 font-normal" id="delivery-subtitle">Free delivery for all
+                        orders over $140</p>
+                </div>
+
+                <!-- Service 2: Customer Support -->
+                <div class="flex flex-col items-center text-center group" id="service-support">
+                    <div class="w-20 h-20 rounded-full bg-[#2F2F2F]/20 flex items-center justify-center transition-transform duration-300 group-hover:scale-105"
+                        id="support-outer-circle">
+                        <div class="w-14 h-14 rounded-full bg-black flex items-center justify-center"
+                            id="support-inner-circle">
+                            <!-- Customer Service Headphone SVG Icon -->
+                            <img src="./src/images/Servicesicon2.png" alt="">
+                        </div>
+                    </div>
+                    <h3 class="text-black font-bold text-xl tracking-wider mt-6 uppercase" id="support-title">24/7
+                        CUSTOMER SERVICE</h3>
+                    <p class="text-sm text-gray-500 mt-2 font-normal" id="support-subtitle">Friendly 24/7 customer
+                        support</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center group" id="service-guarantee">
+                    <div class="w-20 h-20 rounded-full bg-[#2F2F2F]/20 flex items-center justify-center transition-transform duration-300 group-hover:scale-105"
+                        id="guarantee-outer-circle">
+                        <div class="w-14 h-14 rounded-full bg-black flex items-center justify-center"
+                            id="guarantee-inner-circle">
+                            <img src="./src/images/Servicesicon3.png" alt="">
+                        </div>
+                    </div>
+                    <h3 class="text-black font-bold text-xl tracking-wider mt-6 uppercase" id="guarantee-title">MONEY
+                        BACK GUARANTEE</h3>
+                    <p class="text-sm text-gray-500 mt-2 font-normal" id="guarantee-subtitle">We return money within 30
+                        days</p>
+                </div>
+
+            </div>
+
+            <div class="flex justify-end mt-12 md:mt-16" id="scroll-top-block">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                    class="w-12 h-12 rounded-full bg-primary hover:bg-[#E0E0E0] active:scale-95 flex items-center justify-center transition-all duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-black cursor-pointer"
+                    aria-label="Scroll to top" id="scroll-top-button">
+                    <img src="src/images/icons_arrow-up.png" alt="">
+                </button>
+            </div>
+
+
+        </div>
+    </section>
+
+
+   <footer class="bg-black text-white ">
+
+            <div class="md:mx-28 mx-5 py-10 grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-12 md:pt-14">
+                <div>
+                    <h3 class=" font-bold  text-lg md:text-3xl">Exclusive</h3>
+
+                    <h4 class="text-sm md:text-2xl md:pt-5 font-semibold">Subscribe</h4>
+
+                    <p class="text-xs md:text-sm pt-2 md:pt-5">Get 10% off your first order</p>
+
+
+                    <div
+                        class="flex border border-white text-gray-400 rounded-sm pb-2 px-3 items-center pt:3 mt-1 md:pt-3 md:mt-2">
+                        <input class="w-full bg-transparent text-xs" type="text" placeholder="Enter your mail">
+                        <img class="w-3 md:w-6 object-contain" src="Images/Vector (2).png" alt="">
+                    </div>
+
+                </div>
+
+                <div>
+                    <h3 class=" font-semibold text-lg md:text-xl">Support</h3>
+
+                    <p class="text-xs md:text-[16px] md:pt-5 ">111 Bijoy sarani, Dhaka,</p>
+                    <p class="text-xs md:text-[16px] ">DH 1515, Bangladesh.</p>
+                    <p class="text-xs md:text-[16px] pt-1 md:pt-4">exclusive@gmail.com</p>
+
+                    <p class="text-xs md:text-[16px] pt-1 md:pt-4">+88015-88888-9999</p>
+                </div>
+
+                <div>
+                    <h3 class=" font-semibold  text-lg md:text-xl">Account</h3>
+
+                    <ul class="flex flex-col">
+                        <a class="text-xs md:text-[16px] md:pt-5" href="accountdropdown.html"> My Account</a>
+                        <a class="text-xs md:text-[16px] md:pt-4" href="login.html">Login/Register</a>
+                        <a class="text-xs md:text-[16px] md:pt-4" href="cart.html">Cart</a>
+                        <a class="text-xs md:text-[16px] md:pt-4" href="wishlist.html">Wishlist</a>
+                        <a class="text-xs md:text-[16px] md:pt-4" href="categorydropdown.html">Shop</a>
+
+                    </ul>
+
+                </div>
+
+                <div>
+                    <h3 class=" font-semibold  text-lg md:text-xl">Quick Links</h3>
+
+                     <ul class="flex flex-col">
+
+                    <a class="text-xs md:text-[16px] md:pt-5" href="404.html">Privacy Policy</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="404.html">Terms of Use</a>
+
+                    <a class="text-xs md:text-[16px] md:pt-4" href="404.html">FAQs</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="contact.html">Contact</a>
+                </ul>
+                </div>
+
+
+                <div>
+                    <h3 class=" font-semibold  text-lg md:text-xl">Download App</h3>
+                    <p class="text-[8px] font-extralight text-[#fafafa] md:text-[10px] pt-1 md:pt-5">Save $3 with App
+                        New
+                        User Only</p>
+
+                    <div class="flex gap-2 items-center md:pt-3 pt-1">
+                        <img class="object-contain md:w-[75px] md:h-[75px] w-9 h-9" src="Images/Qrcode 1.png"
+                            alt="QR code">
+
+                        <div>
+                            <img class="object-contain h-5 md:h-10 " src="Images/GooglePlay.png" alt="">
+                            <img class="object-contain h-5 md:h-10" src="Images/AppStore.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 md:gap-8 pt-2 md:pt-5">
+                        <img class="w-3 md:w-5 object-contain" src="Images/Icon-Facebook.png" alt="Facebook">
+                        <img class="w-3 md:w-5 object-contain" src="Images/Icon-Twitter.png" alt="Twitter">
+                        <img class="w-3 md:w-5 object-contain" src="Images/icon-instagram.png" alt="Instagram">
+                        <img class="w-3 md:w-5 object-contain" src="Images/Icon-Linkedin.png" alt="LinkedIn">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex gap-1 justify-center pt-6 md:pt-10 items-center pb-3 md:pb-7 ">
+
+                <i class="fa-regular fa-copyright md:text-sm text-[8px] text-gray-600"></i>
+                <p class="text-[8px] md:text-sm font-extralight text-gray-600">Copyright Rimel 2022. All right reserved
+                </p>
+            </div>
+        </footer>
+
 </body>
+
 </html>
