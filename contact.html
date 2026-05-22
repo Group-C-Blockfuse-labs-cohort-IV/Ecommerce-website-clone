@@ -17,17 +17,17 @@
 </head>
 
 <body>
-    
-<header>
 
- <div class="bg-black text-white text-[8px] md:text-sm py-2">
+    <header>
 
-            <div class="flex justify-between px-6 items-center max-w-7xl mx-auto">
+        <div class="bg-black text-white text-[6px] md:text-sm py-3 ">
+
+            <div class="flex justify-between md:px-7 items-center md:max-w-7xl md:mx-auto">
 
                 <div class="flex-1"></div>
                 <div class="flex gap-2 items-center text-center">
-                    <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
-                    <p class="font-semibold underline text-[4px] whitespace-nowrap ">Shop Now</p>
+                    <p class="text-[6px] md:text-sm">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+                    <p class="font-semibold underline text-[6px] md:text-sm whitespace-nowrap ">Shop Now</p>
                 </div>
 
                 <div class="flex flex-1 justify-end relative right-4">
@@ -41,15 +41,136 @@
             </div>
         </div>
 
+        <div class=" flex justify-between items-center mx-6 md:mx-24 md:pl-8 pt-3 md:pt-6 md:pb-3 pb-2 ">
+
+            <p class="font-bold text-black text-lg md:text-3xl">Exclusive</p>
+
+            <div>
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+                <label for="menu-toggle" class="md:hidden cursor-pointer text-xl">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <nav>
+                    <ul class="hidden md:flex gap-6 items-center text-[16px] font-normal">
+                        <li><a class="border-b" href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+
+                <ul
+                    class="absolute top-full left-0 w-full text-sm bg-white shadow-md flex-col gap-4 p-4 md:hidden hidden peer-checked:flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+
+            </div>
+
+            <div class="hidden md:flex md:items-center gap-4 md:mr-7">
+
+                <div class="bg-[#f5f5f5] flex items-center rounded-sm ">
+                    <input class="px-4 py-2 w-full text-xs " type="text" placeholder="What are you looking for?">
+
+                    <img class="w-4 h-4 mr-3 object-contain" src="Images/Component 2.png" alt="search">
+                </div>
+
+                <div class="flex gap-5 items-center">
+
+                    <img class="w-6 h-6 object-center" src="Images/Wishlist.png" alt="wishlist icon">
+
+                    <img class="w-6 h-6 object-contain" src="Images/Cart1 with buy.png" alt="cart icon">
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <div class="m-10 flex gap-2.5">
+        <h1 class="text-gray-400">Home</h1>
+        <span class="text-gray-400"> / </span>
+        <h1>Contact</h1>
+
+    </div>
+
+    <!-- contact content -->
+
+    <div class="flex">
+
+       <!-- first cart -->
+
+       <div class="border border-gray-300 w-80 min-h-96 m-10 p-5 rounded-sm">
+
+         <div class="flex gap-2.5">
+
+            <img src="/my images/phone.png" alt="" class="w-10 h-10 object-contain">
+            <p class="pt-2">Call to us</p>
+
+        </div> <br>
+
+         <p>We are available 24/7, 7 days a week. <br>
+        phone: +88015-88888-9999</p> <br>
+
+        <hr class="border-gray-400"> <br>
+
+        
+
+        <div class="flex gap-2.5">
+            <img src="/my images/message.png" alt="" class="w-10 h-10 object-contain">
+            <p class="pt-2">Write to us</p>
+        </div> <br>
+
+        <p>Fill out our form we will contact <br> you within 24 hours</p> <br>
+        <p>Emails: Customers@exclusive.com</p> <br>
+        <p>Emails: support@exclusive.com</p>
 
 
 
 
 
 
-</header>
+       </div>
 
+       <!-- second cart -->
+
+       <div class="m-10 border  border-gray-300 p-10">
+
+        <div class="flex gap-2.5">
+            <input type="text" placeholder="Your Name" id="" class="border border-gray-300 rounded-sm py-2 px-4">
+            <input type="text" placeholder="Your Name" id="" class="border border-gray-300 rounded-sm py-2 px-4">
+            <input type="text" placeholder="Your Name" id="" class="border border-gray-300 rounded-sm py-2 px-4"> 
+
+           
+
+        </div>
+
+         <textarea name="message" id="" class="border border-gray-300 rounded-sm py-2 px-4 mt-2.5 h-64 w-[100%]" placeholder="Your Message"></textarea>
+
+            <div class="pt-5 place-self-end-safe">
+                <button class="bg-secondary text-white w-52 h-12  ">
+                Send Message
+            </button>
+            </div>
+
+
+       </div>
+
+
+
+
+
+
+
+
+    </div>
     
+
 
 
 
