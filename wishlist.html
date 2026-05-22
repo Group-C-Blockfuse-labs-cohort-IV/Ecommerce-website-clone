@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce website</title>
-    <link rel="stylesheet" href="src/output.css">
-    <script src="https://kit.fontawesome.com/fbf4810423.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Exclusive E-commerce - Wishlist Section Clone">
+    <title>Wishlist | Exclusive</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./src/output.css">
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -16,18 +22,21 @@
     </style>
 </head>
 
-<body>
-    
-<header>
+<body class="bg-white min-h-screen">
 
- <div class="bg-black text-white text-[8px] md:text-sm py-2">
 
-            <div class="flex justify-between px-6 items-center max-w-7xl mx-auto">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="w-full border-b border-gray-200 bg-white">
+
+        <div class="bg-black text-white text-[6px] md:text-sm py-3">
+
+            <div class="flex justify-between md:px-7 items-center max-w-7xl mx-auto">
 
                 <div class="flex-1"></div>
                 <div class="flex gap-2 items-center text-center">
                     <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
-                    <p class="font-semibold underline text-[4px] whitespace-nowrap ">Shop Now</p>
+                    <p class="font-semibold underline text-[6px] md:text-sm whitespace-nowrap ">Shop Now</p>
                 </div>
 
                 <div class="flex flex-1 justify-end relative right-4">
@@ -41,136 +50,319 @@
             </div>
         </div>
 
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-[70px] flex items-center justify-between">
 
+                <!-- Logo -->
+                <h1 class="text-[32px] font-bold">Exclusive</h1>
 
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex items-center gap-12 text-sm font-medium">
+                    <li><a href="#" class="hover:text-gray-500 transition">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-500 transition">Contact</a></li>
+                    <li><a href="#" class="hover:text-gray-500 transition">About</a></li>
+                    <li><a href="#" class="hover:text-gray-500 transition">Sign Up</a></li>
+                </ul>
 
+                <!-- Search and Icons -->
+                <div class="flex items-center gap-6">
+                    <div class="hidden sm:flex items-center bg-[#F5F5F5] px-4 py-3 rounded-2xl">
+                        <input placeholder="What are you looking for?"
+                            class="bg-transparent outline-none text-sm w-[220px]">
+                        <img src="./src/images/searchicon.png" class="w-5 h-5 ml-4" alt="Search">
+                    </div>
 
-
-
-</header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="bg-black text-white w-full ">
-
-        <div class="max-w-7xl mx-auto py-10 px-6 flex flex-col md:flex-row justify-between gap-10 md:pt-14">
-            <div>
-                <h3 class=" font-bold  text-lg md:text-3xl">Exclusive</h3>
-
-                <h4 class="text-sm md:text-2xl pt-5 font-semibold">Subscribe</h4>
-
-                <p class="text-xs md:text-[16px] pt-5">Get 10% off your first order</p>
-
-                <div class="pt-5">
-                    <div class="flex gap-2 border border-white text-gray-400 rounded-sm py-1 px-3 items-center">
-                        <input class="w-full bg-transparent text-xs" type="text" placeholder="Enter your mail">
-                        <img class="w-5 md:w-8 object-contain" src="Images/Vector (2).png" alt="">
+                    <div class="flex items-center gap-5">
+                        <button>
+                            <img src="./src/images/heart.png" class="w-6 h-6" alt="Wishlist">
+                        </button>
+                        <button>
+                            <img src="./src/images/Cart1.png" class="w-6 h-6" alt="Cart">
+                        </button>
+                        <button>
+                            <img src="./src/images/usericon.png" class="w-6 h-6" alt="Wishlist">
+                        </button>
                     </div>
                 </div>
             </div>
+        </nav>
+    </header>
 
-            <div class="mt-6 md:mt-0 ">
-                <h3 class=" font-semibold text-lg md:text-xl">Support</h3>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
-                <p class="text-sm md:text-lg pt-5 ">111 Bijoy sarani, Dhaka,</p>
-                <p class="text-sm md:text-lg ">DH 1515, Bangladesh.</p>
-                <p class="text-sm md:text-lg pt-4">exclusive@gmail.com</p>
-
-                <p class="text-sm md:text-lg pt-4">+88015-88888-9999</p>
+        <section>
+            <div class="flex items-center justify-between mb-12">
+                <h2 class="text-2xl font-medium">
+                    Wishlist
+                    <span class="text-gray-500">(4)</span>
+                </h2>
+                <button class="border border-gray-300 px-10 py-4 rounded hover:bg-gray-100 transition">
+                    Move All To Bag
+                </button>
             </div>
 
-            <div class="mt-6 md:mt-0 ">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div>
+                    <div class="bg-[#F5F5F5] rounded p-6 relative">
+                        <span
+                            class="absolute top-4 left-4 bg-[#DB4444] text-white text-xs px-3 py-1 rounded">-35%</span>
+                        <button class="absolute top-4 right-4 bg-white rounded-full w-8 h-8"><img
+                                src="./src/images/deleteicon.png" alt=""></button>
+
+                        <img src="./src/images/guccibag.png" class="h-[180px] mx-auto object-contain"
+                            alt="Gucci Duffle Bag">
+
+                        <button
+                            class="w-full bg-black text-white py-3 mt-6 rounded hover:bg-gray-800 transition items-center justify-center flex gap-1">
+                            <img src="./src/images/cart-box.png" alt=""> Add To Cart
+                        </button>
+                    </div>
+                    <h3 class="font-medium mt-4">Gucci duffle bag</h3>
+                    <div class="flex gap-3 mt-2">
+                        <span class="text-[#DB4444]">$960</span>
+                        <span class="line-through text-gray-400">$1160</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="bg-[#F5F5F5] rounded p-6 relative">
+                        <button class="absolute top-4 right-4 bg-white rounded-full w-8 h-8"><img
+                                src="./src/images/deleteicon.png" alt=""></button>
+                        <img src="./src/images/jambox.png" class="h-[180px] mx-auto object-contain"
+                            alt="RGB liquid CPU Cooler">
+                        <button
+                            class="w-full bg-black text-white py-3 mt-6 rounded hover:bg-gray-800 transition items-center justify-center flex gap-1">
+                            <img src="./src/images/cart-box.png" alt=""> Add To Cart
+                        </button>
+                    </div>
+                    <h3 class="font-medium mt-4">RGB liquid CPU Cooler</h3>
+                    <div class="flex gap-3 mt-2">
+                        <span class="text-[#DB4444]">$1960</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="bg-[#F5F5F5] rounded p-6 relative">
+                        <button class="absolute top-4 right-4 bg-white rounded-full w-8 h-8"><img
+                                src="./src/images/deleteicon.png" alt=""></button>
+                        <img src="./src/images/ps5 pad.png" class="h-[180px] mx-auto object-contain" alt="PS5 Pad">
+                        <button
+                            class="w-full bg-black text-white py-3 mt-6 rounded hover:bg-gray-800 transition items-center justify-center flex gap-1">
+                            <img src="./src/images/cart-box.png" alt=""> Add To Cart
+                        </button>
+                    </div>
+                    <h3 class="font-medium mt-4">GP11 Shooter USB Gamepad</h3>
+                    <div class="flex gap-3 mt-2">
+                        <span class="text-[#DB4444]">$550</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="bg-[#F5F5F5] rounded p-6 relative">
+                        <button class="absolute top-4 right-4 bg-white rounded-full w-8 h-8"><img
+                                src="./src/images/deleteicon.png" alt=""></button>
+                        <img src="./src/images/jacket.png" class="h-[180px] mx-auto object-contain" alt="jacket">
+                        <button
+                            class="w-full bg-black text-white py-3 mt-6 rounded hover:bg-gray-800 transition items-center justify-center flex gap-1">
+                            <img src="./src/images/cart-box.png" alt=""> Add To Cart
+                        </button>
+                    </div>
+                    <h3 class="font-medium mt-4">Quilted Satin Jacket</h3>
+                    <div class="flex gap-3 mt-2">
+                        <span class="text-[#DB4444]">$750</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= JUST FOR YOU SECTION ================= -->
+        <section class="mt-24">
+            <div class="flex items-center justify-between mb-12">
+                <div class="flex items-center gap-4">
+                    <div class="w-5 h-10 bg-[#DB4444] rounded"></div>
+                    <h2 class="text-2xl font-medium">Just For You</h2>
+                </div>
+                <button class="border border-gray-300 px-10 py-4 rounded hover:bg-gray-100 transition">
+                    See All
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Just For You Product Cards -->
+                <div>
+                    <div class="bg-[#F5F5F5] rounded p-6 relative">
+                        <span
+                            class="absolute top-4 left-4 bg-[#DB4444] text-white text-xs px-3 py-1 rounded">-35%</span>
+                        <button class="absolute top-4 right-4 bg-white rounded-full w-8 h-8"><img
+                                src="./src/images/Fill Eye.png" alt=""></button>
+                        <img src="./src/images/ideapad-gaming-3i-01-500x500 1.png"
+                            class="h-[180px] mx-auto object-contain" alt="ASUS FHD Gaming Laptop">
+                        <button
+                            class="w-full bg-black text-white py-3 mt-6 rounded hover:bg-gray-800 transition items-center justify-center flex gap-1">
+                            <img src="./src/images/cart-box.png" alt=""> Add To Cart
+                        </button>
+                    </div>
+                    <h3 class="font-medium mt-4">ASUS FHD Gaming Laptop</h3>
+                    <div class="flex gap-3 mt-2">
+                        <span class="text-[#DB4444]">$960</span>
+                        <span class="line-through text-gray-400">$1160</span>
+                    </div>
+                    <div class="mt-2 text-[#FFAD33]">
+                        ★★★★★ <span class="text-gray-500">(65)</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-[#F5F5F5] rounded p-6 relative">
+                        <button class="absolute top-4 right-4 bg-white rounded-full w-8 h-8"><img
+                                src="./src/images/Fill Eye.png" alt=""></button>
+                        <img src="./src/images/g27cq4-500x500 1.png" class="h-[180px] mx-auto object-contain"
+                            alt="IPS LCD Gaming Monitor">
+                        <button
+                            class="w-full bg-black text-white py-3 mt-6 rounded hover:bg-gray-800 transition items-center justify-center flex gap-1">
+                            <img src="./src/images/cart-box.png" alt=""> Add To Cart
+                        </button>
+                    </div>
+                    <h3 class="font-medium mt-4">IPS LCD Gaming Monitor</h3>
+                    <div class="flex gap-3 mt-2">
+                        <span class="text-[#DB4444]">$11607</span>
+                    </div>
+                    <div class="mt-2 text-[#FFAD33]">
+                        ★★★★★ <span class="text-gray-500">(65)</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-[#F5F5F5] rounded p-6 relative">
+                        <button class="absolute top-4 right-4 bg-white rounded-full w-8 h-8"><img
+                                src="./src/images/Fill Eye.png" alt=""></button>
+                        <img src="./src/images/gamepad.png" class="h-[180px] mx-auto object-contain"
+                            alt="ASUS FHD Gaming Laptop">
+                        <button
+                            class="w-full bg-black text-white py-3 mt-6 rounded hover:bg-gray-800 transition items-center justify-center flex gap-1">
+                            <img src="./src/images/cart-box.png" alt=""> Add To Cart
+                        </button>
+                    </div>
+                    <h3 class="font-medium mt-4">HAVIT HV-G92 Gamepad</h3>
+                    <div class="flex gap-3 mt-2">
+                        <span class="text-[#DB4444]">$560</span>
+                    </div>
+                    <div class="mt-2 text-[#FFAD33]">
+                        ★★★★★ <span class="text-gray-500">(65)</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-[#F5F5F5] rounded p-6 relative">
+                        <button class="absolute top-4 right-4 bg-white rounded-full w-8 h-8"><img
+                                src="./src/images/Fill Eye.png" alt=""></button>
+                        <img src="./src/images/keyboard.png" class="h-[180px] mx-auto object-contain"
+                            alt="ASUS FHD Gaming Laptop">
+                        <button
+                            class="w-full bg-black text-white py-3 mt-6 rounded hover:bg-gray-800 transition items-center justify-center flex gap-1">
+                            <img src="./src/images/cart-box.png" alt=""> Add To Cart
+                        </button>
+                    </div>
+                    <h3 class="font-medium mt-4">AK-900 Wired Keyboard</h3>
+                    <div class="flex gap-3 mt-2">
+                        <span class="text-[#DB4444]">$200</span>
+                    </div>
+                    <div class="mt-2 text-[#FFAD33]">
+                        ★★★★★ <span class="text-gray-500">(65)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="bg-black text-white ">
+
+        <div class="md:mx-28 mx-5 py-10 grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-12 md:pt-14">
+            <div>
+                <h3 class=" font-bold  text-lg md:text-3xl">Exclusive</h3>
+
+                <h4 class="text-sm md:text-2xl md:pt-5 font-semibold">Subscribe</h4>
+
+                <p class="text-xs md:text-sm pt-2 md:pt-5">Get 10% off your first order</p>
+
+
+                <div
+                    class="flex border border-white text-gray-400 rounded-sm pb-2 px-3 items-center pt:3 mt-1 md:pt-3 md:mt-2">
+                    <input class="w-full bg-transparent text-xs" type="text" placeholder="Enter your mail">
+                    <img class="w-3 md:w-6 object-contain" src="Images/Vector (2).png" alt="">
+                </div>
+
+            </div>
+
+            <div>
+                <h3 class=" font-semibold text-lg md:text-xl">Support</h3>
+
+                <p class="text-xs md:text-[16px] md:pt-5 ">111 Bijoy sarani, Dhaka,</p>
+                <p class="text-xs md:text-[16px] ">DH 1515, Bangladesh.</p>
+                <p class="text-xs md:text-[16px] pt-1 md:pt-4">exclusive@gmail.com</p>
+
+                <p class="text-xs md:text-[16px] pt-1 md:pt-4">+88015-88888-9999</p>
+            </div>
+
+            <div>
                 <h3 class=" font-semibold  text-lg md:text-xl">Account</h3>
 
                 <ul class="flex flex-col">
-                    <a class="text-sm md:text-lg pt-5" href="account.html"> My Account</a>
-                    <a class="text-sm md:text-lg pt-4" href="login.html">Login/Register</a>
-                    <a class="text-sm md:text-lg pt-4" href="cart.html">Cart</a>
-                    <a class="text-sm md:text-lg pt-4" href="wishlist.html">Wishlist</a>
-                    <a class="text-sm md:text-lg pt-4" href="">Shop</a>
+                    <a class="text-xs md:text-[16px] md:pt-5" href="account.html"> My Account</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="login.html">Login/Register</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="cart.html">Cart</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="wishlist.html">Wishlist</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="">Shop</a>
 
                 </ul>
 
             </div>
 
-            <div class="mt-6 md:mt-0 ">
+            <div>
                 <h3 class=" font-semibold  text-lg md:text-xl">Quick Links</h3>
 
                 <ul class="flex flex-col">
 
-                    <a class="text-sm md:text-lg pt-5" href="#privacy policy">Privacy Policy</a>
-                    <a class="text-sm md:text-lg pt-4" href="#terms of use">Terms of Use</a>
+                    <a class="text-xs md:text-[16px] md:pt-5" href="#privacy policy">Privacy Policy</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="#terms of use">Terms of Use</a>
 
-                    <a class="text-sm md:text-lg pt-4" href="#FAQ">FAQs</a>
-                    <a class="text-sm md:text-lg pt-4" href="contact.html">Contact</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="#FAQ">FAQs</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="contact.html">Contact</a>
                 </ul>
             </div>
 
 
-            <div class="mt-6 md:mt-0 ">
+            <div>
                 <h3 class=" font-semibold  text-lg md:text-xl">Download App</h3>
-                <p class="text-xs font-extralight text-[#fafafa] md:text-lg pt-5">Save $3 with App New User Only</p>
+                <p class="text-[8px] font-extralight text-[#fafafa] md:text-[10px] pt-1 md:pt-5">Save $3 with App New
+                    User Only</p>
 
-                <div class="flex gap-2 items-center pt-4">
-                    <img class="object-contain" src="Images/Qrcode 1.png" alt="QR code">
+                <div class="flex gap-2 items-center md:pt-3 pt-1">
+                    <img class="object-contain md:w-[75px] md:h-[75px] w-9 h-9" src="Images/Qrcode 1.png" alt="QR code">
 
                     <div>
-                        <img class="object-contain" src="Images/GooglePlay.png" alt="">
-                        <img class="object-contain" src="Images/AppStore.png" alt="">
+                        <img class="object-contain h-5 md:h-10 " src="Images/GooglePlay.png" alt="">
+                        <img class="object-contain h-5 md:h-10" src="Images/AppStore.png" alt="">
                     </div>
                 </div>
 
-                <div class="flex gap-8 pt-5">
-                    <img class="w-4 md:w-7 object-contain" src="Images/Icon-Facebook.png" alt="Facebook">
-                    <img class="w-4 md:w-7 object-contain" src="Images/Icon-Twitter.png" alt="Twitter">
-                    <img class="w-4 md:w-7 object-contain" src="Images/icon-instagram.png" alt="Instagram">
-                    <img class="w-4 md:w-7 object-contain" src="Images/Icon-Linkedin.png" alt="LinkedIn">
+                <div class="flex gap-2 md:gap-8 pt-2 md:pt-5">
+                    <img class="w-3 md:w-5 object-contain" src="Images/Icon-Facebook.png" alt="Facebook">
+                    <img class="w-3 md:w-5 object-contain" src="Images/Icon-Twitter.png" alt="Twitter">
+                    <img class="w-3 md:w-5 object-contain" src="Images/icon-instagram.png" alt="Instagram">
+                    <img class="w-3 md:w-5 object-contain" src="Images/Icon-Linkedin.png" alt="LinkedIn">
                 </div>
             </div>
 
         </div>
 
-        <div class="flex gap-1 justify-center pt-6 md:pt-10 items-center ">
+        <div class="flex gap-1 justify-center pt-6 md:pt-10 items-center pb-3 md:pb-7 ">
 
-            <i class="fa-regular fa-copyright text-sm text-gray-600"></i>
-            <p class="text-xs font-extralight text-gray-600">Copyright Rimel 2022. All right reserved</p>
+            <i class="fa-regular fa-copyright md:text-sm text-[8px] text-gray-600"></i>
+            <p class="text-[8px] md:text-sm font-extralight text-gray-600">Copyright Rimel 2022. All right reserved</p>
         </div>
     </footer>
-
 </body>
+
 </html>
