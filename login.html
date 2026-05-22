@@ -85,9 +85,8 @@
     </header>
 
     <hr class="text-gray-300">
+
     <!-- Login Section -->
-
-
     <section class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 px-6 md:px-12 lg:px-20 py-10 max-w-7xl mx-auto">
 
     <!-- Left Image -->
@@ -101,7 +100,7 @@
     <div class="w-full max-w-md flex flex-col justify-center">
 
         <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-2">
-            Create an account
+            Login to Exclusive
         </h2>
 
         <p class="text-gray-600 mb-8">
@@ -109,57 +108,15 @@
         </p>
 
         <form class="flex flex-col gap-6">
+            <input type="text" id="email" placeholder="Email or Phone Number" class="w-full border-b-2 border-gray-300 py-2">
 
-            <input 
-                type="text" 
-                id="name" 
-                placeholder="Name" 
-                class="w-full border-b-2 border-gray-300 py-2"
-            >
+            <input  type="password" id="password" placeholder="Password" class="w-full border-b-2 border-gray-300 py">
 
-            <input 
-                type="text" 
-                id="email" 
-                placeholder="Email or Phone Number" 
-                class="w-full border-b-2 border-gray-300 py-2"
-            >
-
-            <input 
-                type="password" 
-                id="password" 
-                placeholder="Password" 
-                class="w-full border-b-2 border-gray-300 py"
-            >
-
-            <button 
-                type="submit" 
-                class="w-full bg-secondary py-3 rounded-md text-white font-medium transition-colors"
-            >
-                Create Account
-            </button>
-
-            <button 
-                type="button" 
-                class="w-full flex items-center justify-center gap-3 py-3 rounded-md text-gray-700 border border-gray-300"
-            >
-                <img 
-                    src="images/Icon-Google.png" 
-                    alt="google-logo" 
-                    class="w-5 h-5"
-                >
-
-                Sign up with Google
-            </button>
-
+            <div class="flex items-center justify-between mt-6">
+                <button type="submit" class="bg-secondary text-white px-8 py-3 rounded-md">Login</button>
+                <a href="#" class="text-secondary text-sm hover:underline">Forgot Password?</a>
+            </div>
         </form>
-
-        <p class="mt-6 text-center text-sm text-gray-600">
-            Already have an account?
-            <a href="#" class="font-medium underline">
-                Log in
-            </a>
-        </p>
-
     </div>
 
 </section>

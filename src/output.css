@@ -711,6 +711,9 @@
   .w-full {
     width: 100%;
   }
+  .w-md {
+    width: var(--container-md);
+  }
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
@@ -1364,6 +1367,9 @@
   .text-red-700 {
     color: var(--color-red-700);
   }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -1540,6 +1546,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-gray-500);
+      }
+    }
+  }
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
       }
     }
   }
