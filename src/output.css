@@ -860,11 +860,8 @@
   .bg-\[\#F5F5F5\] {
     background-color: #F5F5F5;
   }
-  .bg-\[\#\] {
-    background-color: #;
-  }
-  .bg-\[\#d84444\] {
-    background-color: #d84444;
+  .bg-\[\#d\] {
+    background-color: #d;
   }
   .bg-\[\#db4444\] {
     background-color: #db4444;
@@ -994,9 +991,6 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
-  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -1090,21 +1084,6 @@
   .pr-1 {
     padding-right: calc(var(--spacing) * 1);
   }
-  .pr-9 {
-    padding-right: calc(var(--spacing) * 9);
-  }
-  .pr-10 {
-    padding-right: calc(var(--spacing) * 10);
-  }
-  .pr-12 {
-    padding-right: calc(var(--spacing) * 12);
-  }
-  .pr-14 {
-    padding-right: calc(var(--spacing) * 14);
-  }
-  .pr-20 {
-    padding-right: calc(var(--spacing) * 20);
-  }
   .pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
   }
@@ -1119,9 +1098,6 @@
   }
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
-  }
-  .pl-4 {
-    padding-left: calc(var(--spacing) * 4);
   }
   .text-center {
     text-align: center;
@@ -1181,9 +1157,6 @@
   }
   .text-\[10px\] {
     font-size: 10px;
-  }
-  .text-\[12px\] {
-    font-size: 12px;
   }
   .text-\[16px\] {
     font-size: 16px;
@@ -1259,8 +1232,8 @@
   .text-\[1\] {
     color: 1;
   }
-  .text-\[16-x\] {
-    color: 16-x;
+  .text-\[5\] {
+    color: 5;
   }
   .text-amber-600 {
     color: var(--color-amber-600);
@@ -1762,21 +1735,6 @@
       height: calc(var(--spacing) * 3);
     }
   }
-  .md\:h-4 {
-    @media (width >= 48rem) {
-      height: calc(var(--spacing) * 4);
-    }
-  }
-  .md\:h-5 {
-    @media (width >= 48rem) {
-      height: calc(var(--spacing) * 5);
-    }
-  }
-  .md\:h-7 {
-    @media (width >= 48rem) {
-      height: calc(var(--spacing) * 7);
-    }
-  }
   .md\:h-10 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 10);
@@ -1800,11 +1758,6 @@
   .md\:w-3 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 3);
-    }
-  }
-  .md\:w-4 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 4);
     }
   }
   .md\:w-5 {
