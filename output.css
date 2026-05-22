@@ -1486,6 +1486,13 @@
       }
     }
   }
+  .hover\:bg-\[url\(\'\/images\/Category-Camera\.svg\'\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-image: url('/images/Category-Camera.svg');
+      }
+    }
+  }
   .hover\:text-\[18px\] {
     &:hover {
       @media (hover: hover) {
@@ -1529,6 +1536,14 @@
         @supports (color: color-mix(in lab, red, red)) {
           --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-black) 10%, transparent) var(--tw-shadow-alpha), transparent);
         }
+      }
+    }
+  }
+  .hover\:duration-200 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-duration: 200ms;
+        transition-duration: 200ms;
       }
     }
   }
