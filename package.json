@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Group-C-Blockfuse-labs-cohort-IV/Ecommerce-website-clone#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.3.0",
+    "tailwind": "^4.0.0",
     "tailwindcss": "^4.3.0"
   }
 }
