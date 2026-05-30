@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce website</title>
-    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="src/output.css">
     <script src="https://kit.fontawesome.com/fbf4810423.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +18,18 @@
 </head>
 
 <body>
-    
-<header>
 
- <div class="bg-black text-white text-[8px] md:text-sm py-2">
+    <header>
 
-            <div class="flex justify-between px-6 items-center max-w-7xl mx-auto">
+        <div class="bg-black text-white text-[6px] md:text-sm py-3 ">
+
+            <div class="flex justify-between md:px-7 items-center md:max-w-7xl md:mx-auto">
 
                 <div class="flex-1"></div>
                 <div class="flex gap-2 items-center text-center">
-                    <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
-                    <p class="font-semibold underline text-[4px] whitespace-nowrap ">Shop Now</p>
+                    <p class="text-[6px] md:text-sm">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+                    </p>
+                    <p class="font-semibold underline text-[6px] md:text-sm whitespace-nowrap ">Shop Now</p>
                 </div>
 
                 <div class="flex flex-1 justify-end relative right-4">
@@ -42,132 +44,191 @@
         </div>
 
 
+        <div class=" flex justify-between items-center mx-6 md:mx-28 pt-3 md:pt-6 md:pb-3 pb-2 ">
+
+            <p class="font-bold text-black text-lg md:text-3xl">Exclusive</p>
+
+            <div>
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+                <label for="menu-toggle" class="md:hidden cursor-pointer text-xl">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <nav>
+                    <ul class="hidden md:flex gap-6 items-center text-[16px] font-normal">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a class="border-b" href="signup.html">Signup</a></li>
+                    </ul>
+                </nav>
+
+                <ul
+                    class="absolute top-full left-0 w-full text-sm bg-white shadow-md flex-col gap-4 p-4 md:hidden hidden peer-checked:flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+
+            </div>
+
+            <div class="hidden md:flex md:items-center gap-4 md:mr-7">
+
+                <div class="bg-[#f5f5f5] flex items-center rounded-sm ">
+                    <input class="px-4 py-2 w-full text-xs " type="text" placeholder="What are you looking for?">
+
+                    <img class="w-4 h-4 mr-3 object-contain" src="Images/Component 2.png" alt="search">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <hr class="text-gray-300">
+    <!-- Signup Section -->
+    <section
+        class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 px-6 md:px-12 lg:px-20 py-10 max-w-7xl mx-auto">
+
+        <!-- Left Image -->
+        <img src=" images_folder_01/Side Image.png" alt="sign-in-image"
+            class="w-full max-w-[300px] md:max-w-[500px] lg:max-w-[650px] h-auto shrink-0">
+
+        <!-- Right Content -->
+        <div class="w-full max-w-md flex flex-col justify-center">
+
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-2">
+                Create an account
+            </h2>
+
+            <p class="text-gray-600 mb-8">
+                Enter your details below
+            </p>
+
+            <form class="flex flex-col gap-6">
+
+                <input type="text" id="name" placeholder="Name" class="w-full border-b-2 border-gray-300 py-2">
+
+                <input type="text" id="email" placeholder="Email or Phone Number"
+                    class="w-full border-b-2 border-gray-300 py-2">
+
+                <input type="password" id="password" placeholder="Password"
+                    class="w-full border-b-2 border-gray-300 py">
+
+                <button type="submit"
+                    class="w-full bg-secondary py-3 rounded-md text-white font-medium transition-colors">
+                    Create Account
+                </button>
+
+                <button type="button"
+                    class="w-full flex items-center justify-center gap-3 py-3 rounded-md text-gray-700 border border-gray-300">
+                    <img src=" images_folder_01/Icon-Google.png" alt="google-logo" class="w-5 h-5">
+
+                    Sign up with Google
+                </button>
+
+            </form>
+
+            <p class="mt-6 text-center text-sm text-gray-600">
+                Already have an account?
+                <a href="login.html" class="font-medium underline">
+                    Log in
+                </a>
+            </p>
+
+        </div>
+
+    </section>
 
 
+    <footer class="bg-black text-white ">
 
-
-
-</header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="bg-black text-white w-full ">
-
-        <div class="max-w-7xl mx-auto py-10 px-6 flex flex-col md:flex-row justify-between gap-10 md:pt-14">
+        <div class="md:mx-28 mx-5 py-10 grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-12 md:pt-14">
             <div>
                 <h3 class=" font-bold  text-lg md:text-3xl">Exclusive</h3>
 
-                <h4 class="text-sm md:text-2xl pt-5 font-semibold">Subscribe</h4>
+                <h4 class="text-sm md:text-2xl md:pt-5 font-semibold">Subscribe</h4>
 
-                <p class="text-xs md:text-[16px] pt-5">Get 10% off your first order</p>
+                <p class="text-xs md:text-sm pt-2 md:pt-5">Get 10% off your first order</p>
 
-                <div class="pt-5">
-                    <div class="flex gap-2 border border-white text-gray-400 rounded-sm py-1 px-3 items-center">
-                        <input class="w-full bg-transparent text-xs" type="text" placeholder="Enter your mail">
-                        <img class="w-5 md:w-8 object-contain" src="Images/Vector (2).png" alt="">
-                    </div>
+
+                <div
+                    class="flex border border-white text-gray-400 rounded-sm pb-2 px-3 items-center pt:3 mt-1 md:pt-3 md:mt-2">
+                    <input class="w-full bg-transparent text-xs" type="text" placeholder="Enter your mail">
+                    <img class="w-3 md:w-6 object-contain" src="Images/Vector (2).png" alt="">
                 </div>
+
             </div>
 
-            <div class="mt-6 md:mt-0 ">
+            <div>
                 <h3 class=" font-semibold text-lg md:text-xl">Support</h3>
 
-                <p class="text-sm md:text-lg pt-5 ">111 Bijoy sarani, Dhaka,</p>
-                <p class="text-sm md:text-lg ">DH 1515, Bangladesh.</p>
-                <p class="text-sm md:text-lg pt-4">exclusive@gmail.com</p>
+                <p class="text-xs md:text-[16px] md:pt-5 ">111 Bijoy sarani, Dhaka,</p>
+                <p class="text-xs md:text-[16px] ">DH 1515, Bangladesh.</p>
+                <p class="text-xs md:text-[16px] pt-1 md:pt-4">exclusive@gmail.com</p>
 
-                <p class="text-sm md:text-lg pt-4">+88015-88888-9999</p>
+                <p class="text-xs md:text-[16px] pt-1 md:pt-4">+88015-88888-9999</p>
             </div>
 
-            <div class="mt-6 md:mt-0 ">
+            <div>
                 <h3 class=" font-semibold  text-lg md:text-xl">Account</h3>
 
                 <ul class="flex flex-col">
-                    <a class="text-sm md:text-lg pt-5" href="account.html"> My Account</a>
-                    <a class="text-sm md:text-lg pt-4" href="login.html">Login/Register</a>
-                    <a class="text-sm md:text-lg pt-4" href="cart.html">Cart</a>
-                    <a class="text-sm md:text-lg pt-4" href="wishlist.html">Wishlist</a>
-                    <a class="text-sm md:text-lg pt-4" href="">Shop</a>
+                    <a class="text-xs md:text-[16px] md:pt-5" href="accountdropdown.html"> My Account</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="login.html">Login/Register</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="cart.html">Cart</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="wishlist.html">Wishlist</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="categorydropdown.html">Shop</a>
 
                 </ul>
 
             </div>
 
-            <div class="mt-6 md:mt-0 ">
+            <div>
                 <h3 class=" font-semibold  text-lg md:text-xl">Quick Links</h3>
-
                 <ul class="flex flex-col">
 
-                    <a class="text-sm md:text-lg pt-5" href="#privacy policy">Privacy Policy</a>
-                    <a class="text-sm md:text-lg pt-4" href="#terms of use">Terms of Use</a>
+                    <a class="text-xs md:text-[16px] md:pt-5" href="404.html">Privacy Policy</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="404.html">Terms of Use</a>
 
-                    <a class="text-sm md:text-lg pt-4" href="#FAQ">FAQs</a>
-                    <a class="text-sm md:text-lg pt-4" href="contact.html">Contact</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="404.html">FAQs</a>
+                    <a class="text-xs md:text-[16px] md:pt-4" href="contact.html">Contact</a>
                 </ul>
             </div>
 
 
-            <div class="mt-6 md:mt-0 ">
+            <div>
                 <h3 class=" font-semibold  text-lg md:text-xl">Download App</h3>
-                <p class="text-xs font-extralight text-[#fafafa] md:text-lg pt-5">Save $3 with App New User Only</p>
+                <p class="text-[8px] font-extralight text-[#fafafa] md:text-[10px] pt-1 md:pt-5">Save $3 with App New
+                    User Only</p>
 
-                <div class="flex gap-2 items-center pt-4">
-                    <img class="object-contain" src="Images/Qrcode 1.png" alt="QR code">
+                <div class="flex gap-2 items-center md:pt-3 pt-1">
+                    <img class="object-contain md:w-[75px] md:h-[75px] w-9 h-9" src="Images/Qrcode 1.png" alt="QR code">
 
                     <div>
-                        <img class="object-contain" src="Images/GooglePlay.png" alt="">
-                        <img class="object-contain" src="Images/AppStore.png" alt="">
+                        <img class="object-contain h-5 md:h-10 " src="Images/GooglePlay.png" alt="">
+                        <img class="object-contain h-5 md:h-10" src="Images/AppStore.png" alt="">
                     </div>
                 </div>
 
-                <div class="flex gap-8 pt-5">
-                    <img class="w-4 md:w-7 object-contain" src="Images/Icon-Facebook.png" alt="Facebook">
-                    <img class="w-4 md:w-7 object-contain" src="Images/Icon-Twitter.png" alt="Twitter">
-                    <img class="w-4 md:w-7 object-contain" src="Images/icon-instagram.png" alt="Instagram">
-                    <img class="w-4 md:w-7 object-contain" src="Images/Icon-Linkedin.png" alt="LinkedIn">
+                <div class="flex gap-2 md:gap-8 pt-2 md:pt-5">
+                    <img class="w-3 md:w-5 object-contain" src="Images/Icon-Facebook.png" alt="Facebook">
+                    <img class="w-3 md:w-5 object-contain" src="Images/Icon-Twitter.png" alt="Twitter">
+                    <img class="w-3 md:w-5 object-contain" src="Images/icon-instagram.png" alt="Instagram">
+                    <img class="w-3 md:w-5 object-contain" src="Images/Icon-Linkedin.png" alt="LinkedIn">
                 </div>
             </div>
 
         </div>
 
-        <div class="flex gap-1 justify-center pt-6 md:pt-10 items-center ">
+        <div class="flex gap-1 justify-center pt-6 md:pt-10 items-center pb-3 md:pb-7 ">
 
-            <i class="fa-regular fa-copyright text-sm text-gray-600"></i>
-            <p class="text-xs font-extralight text-gray-600">Copyright Rimel 2022. All right reserved</p>
+            <i class="fa-regular fa-copyright md:text-sm text-[8px] text-gray-600"></i>
+            <p class="text-[8px] md:text-sm font-extralight text-gray-600">Copyright Rimel 2022. All right reserved</p>
         </div>
     </footer>
 
 </body>
+
 </html>
